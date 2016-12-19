@@ -1,0 +1,27 @@
+{
+	name: 'Berkin Berkcan Çırak',
+	title: 'Front-End Developer',
+	avatar: '/assets/img/berkin-berkcan-cirak.jpg'
+	phone: '+90 507 498 8240',
+	email: 'berkin@kuyabiye.com',
+	social: {
+		linkedin: 'https://linkedin.com/berkin.cirak',
+		dribbble: 'http://dribbble.com/berkin,
+		github: 'htpp://github.com/berkin
+	},
+	education: {
+		bachelor: {
+			school: 'Hacettepe University',
+			faculty: 'Physics Engineering'
+		}
+	},
+	experiences: [
+		{
+			begin: 'March 2016',
+			end: 'Present',
+			company: 'Come On!',
+			title: 'Senior Front-End Developer',
+			description: '...'
+		}
+	}
+}
