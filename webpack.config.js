@@ -9,14 +9,22 @@ module.exports = {
 		port: 3333
 	},
 	module: {
-		loaders: [{
+		loaders: [
+			{
+				test: /\.json$/,
+			   	loader: 'json-loader'
+			},
+			{
 			test: /\.js$/,
 			exclude: /node_modules/,
 			loader: 'babel',
 			query: {
 				presets: ['es2015', 'react']
 			}
-		}
+			}
 		]
-	}
+	},
+	resolve: {
+		extensions: ['', '.js', '.json']
+	 }
 }
