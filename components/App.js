@@ -1,7 +1,7 @@
 import React from 'react';
 import Education from './Education';
 import Profile from './Profile';
-import Experiences from './Experiences';
+import ExperienceList from './ExperienceList';
 
 class App extends React.Component {
 	render() {
@@ -9,7 +9,7 @@ class App extends React.Component {
 			<div>
 				<Profile />
 				<Education />
-				<Experiences />
+				<ExperienceList />
 			</div>);
 	}
 }

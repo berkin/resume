@@ -4,7 +4,7 @@ class Education extends React.Component {
 	render() {
 		return (
 			<div>
-			Education
+				Education
 			</div>);
 	}
 }
