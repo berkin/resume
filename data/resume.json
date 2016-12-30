@@ -9,12 +9,12 @@
 		"dribbble": "http://dribbble.com/berkin",
 		"github": "htpp://github.com/berkin"
 	},
-	"education": {
-		"bachelor": {
+	"education": [
+		{
 			"school": "Hacettepe University",
 			"faculty": "Physics Engineering"
 		}
-	},
+	],
 	"experiences": [
 		{
 			"begin": "March 2016",

@@ -1,6 +1,6 @@
 import React from 'react';
-import Education from './Education';
 import Profile from './Profile';
+import EducationList from './EducationList';
 import ExperienceList from './ExperienceList';
 
 class App extends React.Component {
@@ -8,7 +8,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<Profile />
-				<Education />
+				<EducationList />
 				<ExperienceList />
 			</div>);
 	}
