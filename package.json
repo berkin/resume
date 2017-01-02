@@ -4,7 +4,8 @@
   "description": "Berkin Berkcan Çırak's Resume",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+	"build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "author": "berkin",
   "license": "ISC",
