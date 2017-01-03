@@ -6,3 +6,4 @@
 - [ ] add download link as pdf or doc
 - [ ] add social media links
 - [ ] server from github pages
+- [ ] arrange file structure
