@@ -5,33 +5,39 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "concurrently --kill-others \"npm run gulp\" \"npm run webpack-dev-server\"",
-	"gulp": "gulp",
-	"webpack-dev-server": "webpack-dev-server"
+    "dev": "concurrently --kill-others \"npm run webpack-dev-server\" \"npm run watch\"",
+    "watch": "webpack --watch",
+    "webpack-dev-server": "webpack-dev-server"
   },
   "author": "berkin",
   "license": "ISC",
   "dependencies": {
+    "purecss": "^0.6.2",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "babel": "^6.5.2",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "concurrently": "^3.1.0",
+    "css-loader": "^0.26.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^1.9.1",
     "json-loader": "^0.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },

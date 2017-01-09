@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../data/resume.json';
-
+import '../assets/css/src/main.scss';
 
 const App = () => (
 	<div>

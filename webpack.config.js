@@ -1,7 +1,10 @@
+const autoprefixer = require('autoprefixer');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
 	entry: './main.js',
 	output: {
-		path: './',
+		path: './build/',
 		filename: 'index.js'
 	},
 	devtool: 'source-map',
@@ -22,10 +25,19 @@ module.exports = {
 				query: {
 					presets: ['es2015', 'react']
 				}
+			},
+			{
+				test: /\.scss$/,
+				loader: ExtractTextPlugin.extract('css!sass')
 			}
 		]
 	},
+	plugins: [
+		new ExtractTextPlugin('./styles.css', {
+			allChunks: true
+		})
+	],
 	resolve: {
-		extensions: ['', '.js', '.json']
+		extensions: ['', '.js', '.json', '.scss']
 	}
 };
