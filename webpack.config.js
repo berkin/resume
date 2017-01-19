@@ -1,5 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 module.exports = {
 	entry: './main.js',
@@ -38,6 +39,9 @@ module.exports = {
 		})
 	],
 	resolve: {
-		extensions: ['', '.js', '.json', '.scss']
+		extensions: ['', '.js', '.json', '.scss', '.css'],
+		alias: {
+			pure: path.join(__dirname, './node_modules/purecss/build/pure.css')
+		}
 	}
 };
