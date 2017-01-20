@@ -21500,83 +21500,85 @@
 	var App = function App() {
 		return _react2.default.createElement(
 			'div',
-			null,
-			_react2.default.createElement(
-				'h1',
-				null,
-				'Profile'
-			),
+			{ className: 'container pure-g' },
 			_react2.default.createElement(
 				'div',
-				null,
-				'Name: ',
-				_resume2.default.name
-			),
-			_react2.default.createElement(
-				'div',
-				null,
-				'Title: ',
-				_resume2.default.title
-			),
-			_react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement('img', { src: _resume2.default.avatar, alt: _resume2.default.name })
-			),
-			_react2.default.createElement(
-				'div',
-				null,
-				'email: ',
-				_resume2.default.email
-			),
-			_react2.default.createElement(
-				'div',
-				null,
-				'phone: ',
-				_resume2.default.phone,
-				'l'
-			),
-			_react2.default.createElement(
-				'h1',
-				null,
-				'Education'
-			),
-			_react2.default.createElement(
-				'ul',
-				null,
-				_resume2.default.education.map(function (item, index) {
-					return _react2.default.createElement(
-						'li',
-						{ key: index },
-						item.school,
-						' - ',
-						item.faculty
-					);
-				})
-			),
-			_react2.default.createElement(
-				'h1',
-				null,
-				'Experiences'
-			),
-			_react2.default.createElement(
-				'ul',
-				null,
-				_resume2.default.experiences.map(function (item, index) {
-					return _react2.default.createElement(
-						'li',
-						{ key: index },
-						item.begin,
-						' - ',
-						item.end,
-						' ',
-						item.company,
-						' ',
-						item.title,
-						' ',
-						item.description
-					);
-				})
+				{ className: 'pure-u-1 content' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'box' },
+					_react2.default.createElement(
+						'figure',
+						{ className: 'avatar' },
+						_react2.default.createElement('img', { src: _resume2.default.avatar, alt: _resume2.default.name })
+					),
+					_react2.default.createElement(
+						'h1',
+						null,
+						_resume2.default.name
+					),
+					_react2.default.createElement(
+						'h2',
+						null,
+						_resume2.default.title
+					),
+					_react2.default.createElement(
+						'div',
+						null,
+						_react2.default.createElement(
+							'a',
+							{ href: 'tel:{data.phone}' },
+							_resume2.default.phone
+						),
+						_react2.default.createElement(
+							'a',
+							{ href: '{data.social.github}' },
+							'Github'
+						)
+					)
+				),
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Education'
+				),
+				_react2.default.createElement(
+					'ul',
+					null,
+					_resume2.default.education.map(function (item, index) {
+						return _react2.default.createElement(
+							'li',
+							{ key: index },
+							item.school,
+							' - ',
+							item.faculty
+						);
+					})
+				),
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Experiences'
+				),
+				_react2.default.createElement(
+					'ul',
+					null,
+					_resume2.default.experiences.map(function (item, index) {
+						return _react2.default.createElement(
+							'li',
+							{ key: index },
+							item.begin,
+							' - ',
+							item.end,
+							' ',
+							item.company,
+							' ',
+							item.title,
+							' ',
+							item.description
+						);
+					})
+				)
 			)
 		);
 	};

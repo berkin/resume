@@ -1,13 +1,57 @@
 @import '~pure';
+*,
+:before,
+:after {
+	box-sizing: border-box;
+}
 
 body {
-	border: 1px solid red;
+	background: #f4f4f4;
+	color: #333;
+	font-size: 1.2em;
+	line-height: 1.4em;
 }
-a {
-	color: red;
 
-	border: 1px solid;
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-div {
-	border: 1px solid cyan;
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+.content {
+	background: #fff;
+	border: 1px solid #e3e3e3;
+	padding: 25px;
+	margin: 25px;
+}
+
+.avatar {
+	border: 2px solid #000;
+	border-radius: 100%;
+	float: right;
+
+	display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+	height: 150px;
+	width: 150px;
+	margin: 0 0 25px 25px;
+}
+
+h1 {
+	margin: 0 0 5px;
+	font-size: 30px;
+}
+
+h2 {
+	margin: 0 0 10px;
+	font-size: 18px;
+}
+
+.box {
+	margin-bottom: 20px;
 }
