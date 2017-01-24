@@ -1330,7 +1330,7 @@ striping:
 body {
   background: #f4f4f4;
   color: #333;
-  font-size: 1.2em;
+  font-size: 13px;
   line-height: 1.4em; }
 
 html, button, input, select, textarea,
@@ -1360,7 +1360,8 @@ html, button, input, select, textarea,
 
 h1 {
   margin: 0 0 5px;
-  font-size: 30px; }
+  font-size: 30px;
+  line-height: 44px; }
 
 h2 {
   margin: 0 0 10px;
@@ -1368,5 +1369,20 @@ h2 {
 
 .box {
   margin-bottom: 20px; }
+
+a {
+  color: #0a9ae6;
+  text-decoration: none; }
+
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  overflow: hidden; }
+  .horizontal-list li {
+    float: left;
+    margin: 0 20px 2px 0; }
+    .horizontal-list li.item-line {
+      float: none; }
 
 /*# sourceMappingURL=styles.css.map*/

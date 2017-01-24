@@ -9,10 +9,14 @@ const App = () => (
 				<figure className="avatar"><img src={data.avatar} alt={data.name} /></figure>
 				<h1>{data.name}</h1>
 				<h2>{data.title}</h2>
-				<div>
-					<a href="tel:{data.phone}">{data.phone}</a>
-					<a href="{data.social.github}">Github</a>
-				</div>
+				<ul className="horizontal-list">
+					<li className="item-line"><a href="tel:{data.phone}">{data.phone}</a></li>
+					<li className="item-line"><a href="email:{data.email}">{data.email}</a></li>
+					<li><a href="{data.social.linkedin}">Linked In</a></li>
+					<li><a href="{data.social.github}">Github</a></li>
+					<li><a href="{data.social.dribbble}">Dribbble</a></li>
+				</ul>
+				<div className="summary">{data.summary}</div>
 			</div>
 			<h1>Education</h1>
 			<ul>

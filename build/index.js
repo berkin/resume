@@ -21523,18 +21523,58 @@
 						_resume2.default.title
 					),
 					_react2.default.createElement(
-						'div',
-						null,
+						'ul',
+						{ className: 'horizontal-list' },
 						_react2.default.createElement(
-							'a',
-							{ href: 'tel:{data.phone}' },
-							_resume2.default.phone
+							'li',
+							{ className: 'item-line' },
+							_react2.default.createElement(
+								'a',
+								{ href: 'tel:{data.phone}' },
+								_resume2.default.phone
+							)
 						),
 						_react2.default.createElement(
-							'a',
-							{ href: '{data.social.github}' },
-							'Github'
+							'li',
+							{ className: 'item-line' },
+							_react2.default.createElement(
+								'a',
+								{ href: 'email:{data.email}' },
+								_resume2.default.email
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '{data.social.linkedin}' },
+								'Linked In'
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '{data.social.github}' },
+								'Github'
+							)
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							_react2.default.createElement(
+								'a',
+								{ href: '{data.social.dribbble}' },
+								'Dribbble'
+							)
 						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'summary' },
+						_resume2.default.summary
 					)
 				),
 				_react2.default.createElement(
@@ -21600,6 +21640,7 @@
 			"dribbble": "http://dribbble.com/berkin",
 			"github": "htpp://github.com/berkin"
 		},
+		"summary": "8+ years experience in interactive design & development<br />Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.<br />An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites. <br />Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
 		"education": [
 			{
 				"school": "Hacettepe University",
