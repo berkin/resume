@@ -12,6 +12,7 @@
 	"summary": "8+ years experience in interactive design & development<br />Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.<br />An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites. <br />Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
 	"education": [
 		{
+			"title": "Bachelor",
 			"school": "Hacettepe University",
 			"faculty": "Physics Engineering"
 		}
@@ -22,7 +23,35 @@
 			"end": "Present",
 			"company": "Come On!",
 			"title": "Senior Front-End Developer",
-			"description": "..."
+			"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+		},
+		{
+			"begin": "July 2013",
+			"end": "March 2016",
+			"company": "Garanti Technology",
+			"title": "Senior Front-End Developer",
+			"description": "Responsible for the front-end architecture of a large scale single-page CRM application.\n Developed re-usable modules and javascript plugins.\n Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n Mentored the backend and front-end developers about developing javascript applications.\n Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/ compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n Developed SPA single-page applications for pension system and credit cards application."
+		},
+		{
+			"begin": "March 2016",
+			"end": "Present",
+			"company": "Come On!",
+			"title": "Senior Front-End Developer",
+			"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+		},
+		{
+			"begin": "March 2016",
+			"end": "Present",
+			"company": "Come On!",
+			"title": "Senior Front-End Developer",
+			"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+		},
+		{
+			"begin": "March 2016",
+			"end": "Present",
+			"company": "Come On!",
+			"title": "Senior Front-End Developer",
+			"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
 		}]
 }
 

@@ -16,7 +16,7 @@ const App = () => (
 					<li><a href="{data.social.github}">Github</a></li>
 					<li><a href="{data.social.dribbble}">Dribbble</a></li>
 				</ul>
-				<div className="summary">{data.summary}</div>
+				<div className="summary" dangerouslySetInnerHTML={{__html: data.summary}} />
 			</div>
 			<h1>Education</h1>
 			<ul>
@@ -31,7 +31,9 @@ const App = () => (
 			<ul>
 				{
 				data.experiences.map((item, index) =>
-					<li key={index}>{item.begin} - {item.end} {item.company} {item.title} {item.description}</li>
+					<li key={index}>{item.begin} - {item.end} {item.company} {item.title}
+						<div dangerouslySetInnerHTML={{__html: item.description}} />
+					</li>
 				)
 				}
 			</ul>
