@@ -17,11 +17,11 @@ html, button, input, select, textarea,
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.container {
+.main-container {
 	max-width: 960px;
 	margin: auto;
 }
-.content {
+.main-content {
 	background: #fff;
 	border: 1px solid #e3e3e3;
 	padding: 25px;
@@ -44,7 +44,8 @@ html, button, input, select, textarea,
 
 h1 {
 	margin: 0 0 5px;
-	font-size: 30px;
+	font-size: 24px;
+	font-weight: normal;
 	line-height: 44px;
 }
 
@@ -74,6 +75,29 @@ a {
 
 		&.item-line {
 			float: none;
+		}
+	}
+}
+
+.general-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px;
+
+	li {
+		margin: 0 0 50px;
+		overflow: hidden;
+		.date {
+			display: block;
+		}
+		.label {
+			font-weight: bold;
+			float: left;
+			width: 120px;
+		}
+
+		.content {
+			margin-left: 130px;
 		}
 	}
 }

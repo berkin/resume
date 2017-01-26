@@ -21500,10 +21500,10 @@
 	var App = function App() {
 		return _react2.default.createElement(
 			'div',
-			{ className: 'container pure-g' },
+			{ className: 'main-container pure-g' },
 			_react2.default.createElement(
 				'div',
-				{ className: 'pure-u-1 content' },
+				{ className: 'pure-u-1 main-content' },
 				_react2.default.createElement(
 					'div',
 					{ className: 'box' },
@@ -21515,7 +21515,11 @@
 					_react2.default.createElement(
 						'h1',
 						null,
-						_resume2.default.name
+						_react2.default.createElement(
+							'strong',
+							null,
+							_resume2.default.name
+						)
 					),
 					_react2.default.createElement(
 						'h2',
@@ -21598,19 +21602,40 @@
 				),
 				_react2.default.createElement(
 					'ul',
-					null,
+					{ className: 'general-list' },
 					_resume2.default.experiences.map(function (item, index) {
 						return _react2.default.createElement(
 							'li',
 							{ key: index },
-							item.begin,
-							' - ',
-							item.end,
-							' ',
-							item.company,
-							' ',
-							item.title,
-							_react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: item.description } })
+							_react2.default.createElement(
+								'div',
+								{ className: 'label' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'date' },
+									item.begin
+								),
+								_react2.default.createElement(
+									'span',
+									{ className: 'date' },
+									item.end
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'content' },
+								_react2.default.createElement(
+									'h2',
+									{ className: 'company' },
+									item.company
+								),
+								_react2.default.createElement(
+									'h3',
+									{ className: 'title' },
+									item.title
+								),
+								_react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: item.description } })
+							)
 						);
 					})
 				)

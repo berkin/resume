@@ -1337,11 +1337,11 @@ html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
 
-.container {
+.main-container {
   max-width: 960px;
   margin: auto; }
 
-.content {
+.main-content {
   background: #fff;
   border: 1px solid #e3e3e3;
   padding: 25px;
@@ -1360,7 +1360,8 @@ html, button, input, select, textarea,
 
 h1 {
   margin: 0 0 5px;
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: normal;
   line-height: 44px; }
 
 h2 {
@@ -1384,5 +1385,21 @@ a {
     margin: 0 20px 2px 0; }
     .horizontal-list li.item-line {
       float: none; }
+
+.general-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px; }
+  .general-list li {
+    margin: 0 0 50px;
+    overflow: hidden; }
+    .general-list li .date {
+      display: block; }
+    .general-list li .label {
+      font-weight: bold;
+      float: left;
+      width: 120px; }
+    .general-list li .content {
+      margin-left: 130px; }
 
 /*# sourceMappingURL=styles.css.map*/

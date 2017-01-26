@@ -3,11 +3,11 @@ import data from '../data/resume.json';
 import '../assets/css/src/main.scss';
 
 const App = () => (
-	<div className="container pure-g">
-		<div className="pure-u-1 content">
+	<div className="main-container pure-g">
+		<div className="pure-u-1 main-content">
 			<div className="box">
 				<figure className="avatar"><img src={data.avatar} alt={data.name} /></figure>
-				<h1>{data.name}</h1>
+				<h1><strong>{data.name}</strong></h1>
 				<h2>{data.title}</h2>
 				<ul className="horizontal-list">
 					<li className="item-line"><a href="tel:{data.phone}">{data.phone}</a></li>
@@ -28,11 +28,19 @@ const App = () => (
 			</ul>
 
 			<h1>Experiences</h1>
-			<ul>
+			<ul className="general-list">
 				{
 				data.experiences.map((item, index) =>
-					<li key={index}>{item.begin} - {item.end} {item.company} {item.title}
-						<div dangerouslySetInnerHTML={{__html: item.description}} />
+					<li key={index}>
+						<div className="label">
+							<span className="date">{item.begin}</span>
+							<span className="date">{item.end}</span>
+						</div>
+						<div className="content">
+							<h2 className="company">{item.company}</h2>
+							<h3 className="title">{item.title}</h3>
+							<div dangerouslySetInnerHTML={{__html: item.description}} />
+						</div>
 					</li>
 				)
 				}
