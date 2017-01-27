@@ -21684,11 +21684,11 @@
 				"description": "Responsible for the front-end architecture of a large scale single-page CRM application.\n Developed re-usable modules and javascript plugins.\n Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n Mentored the backend and front-end developers about developing javascript applications.\n Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/ compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n Developed SPA single-page applications for pension system and credit cards application."
 			},
 			{
-				"begin": "March 2016",
-				"end": "Present",
-				"company": "Come On!",
+				"begin": "April 2011",
+				"end": "July 2013",
+				"company": "Nexum Boğaziçi",
 				"title": "Senior Front-End Developer",
-				"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+				"description": "* Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.\\n * Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.\\n * Designed and built the front-end of wap.turkcell.com for low-end feature phones.\\n * Responsible for design and front-end development of Sony's dealer portal Sony1 which is active in 36 countries.\\n * Lead front-end developer of large-scale, cutting-edge websites of Turkcell including Turkcell Store, Turkcell Online Services, Turkcell E-Bill and Turkcell E-Bill Mobile.\\n * Designed and developed an administration theme which is used in every project of the company. Also used as a stand-alone project of BSH's work order system BSH MIP.\\n * Added features to the application of Sony's Tablet."
 			},
 			{
 				"begin": "March 2016",
