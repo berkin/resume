@@ -12,6 +12,7 @@
   "author": "berkin",
   "license": "ISC",
   "dependencies": {
+    "marked": "^0.3.6",
     "purecss": "^0.6.2",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"

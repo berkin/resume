@@ -1,4 +1,5 @@
 import React from 'react';
+import marked from 'marked';
 import data from '../data/resume.json';
 import '../assets/css/src/main.scss';
 
@@ -39,7 +40,7 @@ const App = () => (
 						<div className="content">
 							<h2 className="company">{item.company}</h2>
 							<h3 className="title">{item.title}</h3>
-							<div dangerouslySetInnerHTML={{__html: item.description}} />
+							<div dangerouslySetInnerHTML={{__html: marked(item.description)}} />
 						</div>
 					</li>
 				)
