@@ -1386,20 +1386,31 @@ a {
     .horizontal-list li.item-line {
       float: none; }
 
+ul {
+  list-style: disc; }
+  ul > li {
+    margin-bottom: 10px; }
+    ul > li:last-child {
+      margin-bottom: 0; }
+
 .general-list {
   list-style: none;
   padding: 0;
   margin: 0 0 20px; }
-  .general-list li {
-    margin: 0 0 50px;
+  .general-list > li {
+    border-bottom: 1px solid #e3e3e3;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
     overflow: hidden; }
-    .general-list li .date {
+    .general-list > li:last-child {
+      border: 0; }
+    .general-list > li .date {
       display: block; }
-    .general-list li .label {
+    .general-list > li .label {
       font-weight: bold;
       float: left;
       width: 120px; }
-    .general-list li .content {
+    .general-list > li .content {
       margin-left: 130px; }
 
 /*# sourceMappingURL=styles.css.map*/

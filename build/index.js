@@ -21685,28 +21685,49 @@
 				"end": "March 2016",
 				"company": "Garanti Technology",
 				"title": "Senior Front-End Developer",
-				"description": "Responsible for the front-end architecture of a large scale single-page CRM application.\n Developed re-usable modules and javascript plugins.\n Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n Mentored the backend and front-end developers about developing javascript applications.\n Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/ compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n Developed SPA single-page applications for pension system and credit cards application."
+				"description": "- Responsible for the front-end architecture of a large scale single-page CRM application.\n- Developed re-usable modules and javascript plugins.\n- Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n- Mentored the backend and front-end developers about developing javascript applications.\n- Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/ compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n- Developed SPA single-page applications for pension system and credit cards application."
 			},
 			{
 				"begin": "April 2011",
 				"end": "July 2013",
 				"company": "Nexum Boğaziçi",
 				"title": "Senior Front-End Developer",
-				"description": "* Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.\\n * Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.\\n * Designed and built the front-end of wap.turkcell.com for low-end feature phones.\\n * Responsible for design and front-end development of Sony's dealer portal Sony1 which is active in 36 countries.\\n * Lead front-end developer of large-scale, cutting-edge websites of Turkcell including Turkcell Store, Turkcell Online Services, Turkcell E-Bill and Turkcell E-Bill Mobile.\\n * Designed and developed an administration theme which is used in every project of the company. Also used as a stand-alone project of BSH's work order system BSH MIP.\\n * Added features to the application of Sony's Tablet."
+				"description": "- Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.\n- Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.\n- Designed and built the front-end of wap.turkcell.com for low-end feature phones.\n- Responsible for design and front-end development of Sony's dealer portal Sony1 which is active in 36 countries.\n- Lead front-end developer of large-scale, cutting-edge websites of Turkcell including Turkcell Store, Turkcell Online Services, Turkcell E-Bill and Turkcell E-Bill Mobile.\n- Designed and developed an administration theme which is used in every project of the company. Also used as a stand-alone project of BSH's work order system BSH MIP.\n- Added features to the application of Sony's Tablet."
 			},
 			{
-				"begin": "March 2016",
-				"end": "Present",
-				"company": "Come On!",
-				"title": "Senior Front-End Developer",
-				"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+				"begin": "April 2010",
+				"end": "April 2011",
+				"company": "Haberturk",
+				"title": "Full Stack Developer",
+				"description": "- Leading media company in Turkey\n- Maintenance of backend and frontend for the multisite network on daily basis.\n- Adding new pages and features, performance optimization and bug fixing.\n- Perform cross browser testing and debugging to eliminate UI/JavaScript bugs in supported browsers (IE 6-7-8-9, Firefox, Chrome & Safari).\n- As part of the migration the front-end of haberturk.com has been completely re-architectured and re-developed from scratch, minimizing the cross-browser issues, and optimization.\n- Lead front-end developer and backend developer on the launch of the bloomberght.com.\n- Directly responsible for all front-end development of the haberturk.com (including the sub-sites), bloomberght.com.\n- Responsible of the ads integration to the multi-site network. Researching and developing new ad features and optimization of the ads.\n- Directly responsible of SEO. Monitoring google analytics, web master tools and developing for seo purposes on daily basis.\n- Back-end and front-end developer of Referendum 2010 sub-site. Parse and serve data of the results for TV and website.\n- Developer of the video portal re-design video.haberturk.com."
 			},
 			{
-				"begin": "March 2016",
-				"end": "Present",
-				"company": "Come On!",
-				"title": "Senior Front-End Developer",
-				"description": "ComeOn is a Swedish online gaming, betting and casino portal<br />Modern workflow techniques including React, ES6, Webpack, Sass, Gulp<br />Developing the company’s mobile gaming platform from scratch with React"
+				"begin": "January 2010",
+				"end": "July 2013",
+				"company": "Freelance",
+				"title": "Full Stack Developer",
+				"description": "- Work as a front-end developer for the new design of ING BANK Turkey [(ingbank.com.tr)](http://ingbank.com.tr).\n- Developed a javascript framework for calculation tools.\n- Various forms of calculations could be created easily using the framework [ex. Loan Calculator](https://www.ingbank.com.tr/en/knowledge-base/loans#ihtiyac-kredisi).\n- Front-end developer of the internet banking website of ING BANK Turkey [e-bank website](https://internetsubesi.ingbank.com.tr/). It is the first responsive internet banking website in Turkey. Developed custom plugins like virtual keyboard, responsive tables.\n- Designed and developed Erdoganlar Bisiklet (erdoganlarbisiklet.com). It is an online bike store which is based on magento.\n- Lead front-end and back-end developer of the video tutorial website \"The Maths Tutor\" (themathstutor.com.au) It is a responsive website which is based on wordpress."
+			},
+			{
+				"begin": "2008",
+				"end": "2010",
+				"company": "Siyah Balık",
+				"title": "Full Stack Developer",
+				"description": "- Focused on e-commerce. Built couple of e-commerce websites using open source e-commerce platforms including osCommerce, Zen-cart, Magento.\n- Worked on e-commerce platform's administration panel to improve UX and design.\n- Integrated credit card payment solutions for Magento and Zen-Cart.\n- Designed and Developed erdoganlarbisiklet.com with Magento.\n- Experienced with Joomla. Developed fulbright.org.tr, emtains.com, armapr.com\n- Developed company projects (storemia.com, kuyabiye.com and criball.com) from scratch using Symfony Framework and Doctrine."
+			},
+			{
+				"begin": "2005",
+				"end": "2007",
+				"company": "Mor-Tel",
+				"title": "Full Stack Developer",
+				"description": "- Built applications like instant messaging, sms services by using Telsim's sms gateway.\n- Developed a smart portal which includes news, social network, calendar, affiliate system from scratch using technologies asp, MsSql and native javascript."
+			},
+			{
+				"begin": "2004",
+				"end": "2005",
+				"company": "Erasmus Information Technology",
+				"title": "Web Designer",
+				"description": "- Focused on e-commerce, designed online book store."
 			}
 		]
 	};
