@@ -46,7 +46,7 @@ h1 {
 	margin: 0 0 5px;
 	font-size: 24px;
 	font-weight: normal;
-	line-height: 44px;
+	line-height: 1.5em;
 }
 
 h2 {
@@ -112,9 +112,60 @@ ul {
 			float: left;
 			width: 120px;
 		}
+		.title {
+			margin: 0;
+		}
 
 		.content {
 			margin-left: 130px;
+		}
+
+		.title {
+			+ div {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 35.5em) {
+	.avatar {
+		float: none;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header,
+	.sub-header {
+		text-align: center;
+	}
+
+	.horizontal-list {
+		text-align: center;
+
+		> li {
+			float: none;
+			display: inline-block;
+			margin-right: 0;
+			padding: 0 10px;
+			&.item-line {
+				width: 100%;
+			}
+		}
+
+	}
+
+	.general-list {
+		> li {
+			.label {
+				float: right;
+				text-align: right;
+			}
+
+			.content {
+				margin-left: 0;
+			}
 		}
 	}
 }

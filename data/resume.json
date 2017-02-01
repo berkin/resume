@@ -9,12 +9,13 @@
 		"dribbble": "http://dribbble.com/berkin",
 		"github": "htpp://github.com/berkin"
 	},
-	"summary": "8+ years experience in interactive design & development<br />Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.<br />An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites. <br />Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
+	"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
 	"education": [
 		{
 			"title": "Bachelor",
 			"school": "Hacettepe University",
-			"faculty": "Physics Engineering"
+			"faculty": "Physics Engineering",
+			"end": "2004"
 		}
 	],
 	"experiences": [
@@ -73,7 +74,23 @@
 			"company": "Erasmus Information Technology",
 			"title": "Web Designer",
 			"description": "- Focused on e-commerce, designed online book store."
+		}],
+		"conferences": [{
+			"title": "Fluent",
+			"date": "2014",
+			"location": "San Fransisco"
+		},{
+			"title": "Jsist",
+			"date": "2014",
+			"location": "İstanbul"
+		}, {
+			"title": "UX Alive",
+			"date": "2015",
+			"location": "İstanbul"
+		},{
+			"title": "Node Interactive",
+			"date": "2016",
+			"location": "Amsterdam"
 		}]
-
 }
 

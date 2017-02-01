@@ -2,6 +2,7 @@
  - create one page resume
  
 # TODO
+- [ ] add hjson
 - [ ] add conferences
 - [ ] make more mobile friendly
 - [x] update cv

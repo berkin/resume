@@ -21518,7 +21518,7 @@
 					),
 					_react2.default.createElement(
 						'h1',
-						null,
+						{ className: 'header' },
 						_react2.default.createElement(
 							'strong',
 							null,
@@ -21527,7 +21527,7 @@
 					),
 					_react2.default.createElement(
 						'h2',
-						null,
+						{ className: 'sub-header' },
 						_resume2.default.title
 					),
 					_react2.default.createElement(
@@ -21579,7 +21579,7 @@
 							)
 						)
 					),
-					_react2.default.createElement('div', { className: 'summary', dangerouslySetInnerHTML: { __html: _resume2.default.summary } })
+					_react2.default.createElement('div', { className: 'summary', dangerouslySetInnerHTML: { __html: (0, _marked2.default)(_resume2.default.summary) } })
 				),
 				_react2.default.createElement(
 					'h1',
@@ -21588,14 +21588,30 @@
 				),
 				_react2.default.createElement(
 					'ul',
-					null,
+					{ className: 'general-list' },
 					_resume2.default.education.map(function (item, index) {
 						return _react2.default.createElement(
 							'li',
 							{ key: index },
-							item.school,
-							' - ',
-							item.faculty
+							_react2.default.createElement(
+								'div',
+								{ className: 'label' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'date' },
+									item.end
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'content' },
+								_react2.default.createElement(
+									'h2',
+									{ className: 'title' },
+									item.school
+								),
+								item.faculty
+							)
 						);
 					})
 				),
@@ -21642,6 +21658,44 @@
 							)
 						);
 					})
+				),
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Conferences'
+				),
+				_react2.default.createElement(
+					'ul',
+					{ className: 'general-list' },
+					_resume2.default.conferences.map(function (item, index) {
+						return _react2.default.createElement(
+							'li',
+							{ key: index },
+							_react2.default.createElement(
+								'div',
+								{ className: 'label' },
+								_react2.default.createElement(
+									'span',
+									{ className: 'date' },
+									item.date
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'content' },
+								_react2.default.createElement(
+									'h2',
+									{ className: 'company' },
+									item.title
+								),
+								_react2.default.createElement(
+									'h3',
+									{ className: 'title' },
+									item.location
+								)
+							)
+						);
+					})
 				)
 			)
 		);
@@ -21664,12 +21718,13 @@
 			"dribbble": "http://dribbble.com/berkin",
 			"github": "htpp://github.com/berkin"
 		},
-		"summary": "8+ years experience in interactive design & development<br />Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.<br />An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites. <br />Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
+		"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
 		"education": [
 			{
 				"title": "Bachelor",
 				"school": "Hacettepe University",
-				"faculty": "Physics Engineering"
+				"faculty": "Physics Engineering",
+				"end": "2004"
 			}
 		],
 		"experiences": [
@@ -21728,6 +21783,28 @@
 				"company": "Erasmus Information Technology",
 				"title": "Web Designer",
 				"description": "- Focused on e-commerce, designed online book store."
+			}
+		],
+		"conferences": [
+			{
+				"title": "Fluent",
+				"date": "2014",
+				"location": "San Fransisco"
+			},
+			{
+				"title": "Jsist",
+				"date": "2014",
+				"location": "İstanbul"
+			},
+			{
+				"title": "UX Alive",
+				"date": "2015",
+				"location": "İstanbul"
+			},
+			{
+				"title": "Node Interactive",
+				"date": "2016",
+				"location": "Amsterdam"
 			}
 		]
 	};

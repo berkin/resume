@@ -1362,7 +1362,7 @@ h1 {
   margin: 0 0 5px;
   font-size: 24px;
   font-weight: normal;
-  line-height: 44px; }
+  line-height: 1.5em; }
 
 h2 {
   margin: 0 0 10px;
@@ -1410,7 +1410,35 @@ ul {
       font-weight: bold;
       float: left;
       width: 120px; }
+    .general-list > li .title {
+      margin: 0; }
     .general-list > li .content {
       margin-left: 130px; }
+    .general-list > li .title + div {
+      margin-top: 20px; }
+
+@media screen and (max-width: 35.5em) {
+  .avatar {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .header,
+  .sub-header {
+    text-align: center; }
+  .horizontal-list {
+    text-align: center; }
+    .horizontal-list > li {
+      float: none;
+      display: inline-block;
+      margin-right: 0;
+      padding: 0 10px; }
+      .horizontal-list > li.item-line {
+        width: 100%; }
+  .general-list > li .label {
+    float: right;
+    text-align: right; }
+  .general-list > li .content {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map*/
