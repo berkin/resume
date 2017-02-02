@@ -1437,7 +1437,8 @@ ul {
         width: 100%; }
   .general-list > li .label {
     float: right;
-    text-align: right; }
+    text-align: right;
+    width: auto; }
   .general-list > li .content {
     margin-left: 0; } }
 
