@@ -2,9 +2,9 @@
  - create one page resume
  
 # TODO
-- [ ] add hjson
-- [ ] add conferences
-- [ ] make more mobile friendly
+- [x] add hjson
+- [x] add conferences
+- [x] make more mobile friendly
 - [x] update cv
 - [ ] add download link as pdf or doc
 - [ ] add social media icons
