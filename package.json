@@ -12,7 +12,6 @@
   "author": "berkin",
   "license": "ISC",
   "dependencies": {
-    "hjson": "^2.4.1",
     "marked": "^0.3.6",
     "purecss": "^0.6.2",
     "react": "^15.3.1",
