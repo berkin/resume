@@ -1,7 +1,8 @@
 import React from 'react';
 import marked from 'marked';
-import data from '../data/resume.json';
+import data from '../data/resume.hjson';
 import '../assets/css/src/main.scss';
+
 
 const App = () => (
 	<div className="main-container pure-g">
@@ -17,7 +18,7 @@ const App = () => (
 					<li><a href="{data.social.github}">Github</a></li>
 					<li><a href="{data.social.dribbble}">Dribbble</a></li>
 				</ul>
-				<div className="summary" dangerouslySetInnerHTML={{__html: marked(data.summary)}} />
+				<div className="summary" dangerouslySetInnerHTML={{ __html: marked(data.summary) }} />
 			</div>
 			<h1>Education</h1>
 			<ul className="general-list">
@@ -46,7 +47,7 @@ const App = () => (
 						<div className="content">
 							<h2 className="company">{item.company}</h2>
 							<h3 className="title">{item.title}</h3>
-							<div dangerouslySetInnerHTML={{__html: marked(item.description)}} />
+							<div dangerouslySetInnerHTML={{ __html: marked(item.description) }} />
 						</div>
 					</li>
 				)

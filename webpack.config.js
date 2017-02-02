@@ -20,6 +20,10 @@ module.exports = {
 				loader: 'json-loader'
 			},
 			{
+				test: /\.hjson$/,
+				loader: 'hjson-loader'
+			},
+			{
 				test: /\.js$/,
 				exclude: /node_modules/,
 				loader: 'babel',
