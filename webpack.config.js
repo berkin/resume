@@ -16,10 +16,6 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.json$/,
-				loader: 'json-loader'
-			},
-			{
 				test: /\.hjson$/,
 				loader: 'hjson-loader'
 			},
@@ -43,7 +39,7 @@ module.exports = {
 		})
 	],
 	resolve: {
-		extensions: ['', '.js', '.json', '.scss', '.css'],
+		extensions: ['', '.js', '.scss', '.css'],
 		alias: {
 			pure: path.join(__dirname, './node_modules/purecss/build/pure.css')
 		}
