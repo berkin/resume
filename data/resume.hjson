@@ -1,15 +1,21 @@
 {
-	"name": "Berkin Berkcan Çırak",
-	"title": "Front-End Developer",
-	"avatar": "/assets/img/berkin-berkcan-cirak.jpg",
-	"phone": "+90 507 498 8240",
-	"email": "berkin@kuyabiye.com",
+	"name": "Berkin Berkcan Çırak"
+	"title": "Front-End Developer"
+	"avatar": "assets/img/berkin-berkcan-cirak.jpg"
+	"phone": "+90 507 498 8240"
+	"email": "berkin@kuyabiye.com"
 	"social": {
-		"linkedin": "https://linkedin.com/berkin.cirak",
-		"dribbble": "http://dribbble.com/berkin",
+		"linkedin": "https://linkedin.com/berkin.cirak"
+		"dribbble": "http://dribbble.com/berkin"
 		"github": "htpp://github.com/berkin"
-	},
-	"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
+	}
+	"summary":
+		'''
+		- 8+ years experience in interactive design & development
+		- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.
+		- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.
+		- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.
+		'''
 	"education": [
 		{
 			"title": "Bachelor",

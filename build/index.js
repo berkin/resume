@@ -23024,7 +23024,7 @@
 	module.exports = {
 		"name": "Berkin Berkcan Çırak",
 		"title": "Front-End Developer",
-		"avatar": "/assets/img/berkin-berkcan-cirak.jpg",
+		"avatar": "assets/img/berkin-berkcan-cirak.jpg",
 		"phone": "+90 507 498 8240",
 		"email": "berkin@kuyabiye.com",
 		"social": {
