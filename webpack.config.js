@@ -22,10 +22,7 @@ module.exports = {
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: 'babel',
-				query: {
-					presets: ['es2015', 'react']
-				}
+				loaders: ['babel?presets[]=es2015,presets[]=react']
 			},
 			{
 				test: /\.scss$/,
