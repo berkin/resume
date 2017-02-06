@@ -1,17 +1,22 @@
 const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-	entry: './main.js',
+	entry: [
+		'./main.js',
+		'webpack/hot/dev-server',
+		'webpack-dev-server/client?http://localhost:3333/'],
 	output: {
-		path: './build/',
+		path: '/build/',
 		filename: 'index.js'
 	},
 	devtool: 'source-map',
 	devServer: {
 		inline: true,
-		port: 3333
+		port: 3333,
+		hot: true
 	},
 	module: {
 		loaders: [
@@ -31,6 +36,7 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin('./styles.css', {
 			allChunks: true
 		})

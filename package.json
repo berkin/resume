@@ -1,16 +1,17 @@
 {
   "name": "resume",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Berkin Berkcan Çırak's Resume",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "concurrently --kill-others \"npm run webpack-dev-server\" \"npm run watch\"",
+    "dev": "concurrently --kill-others \"npm webpack-dev-server\"",
     "watch": "webpack --watch",
-    "webpack-dev-server": "webpack-dev-server"
+    "webpack-dev-server": "webpack-dev-server",
+	"start": "node server.js"
   },
   "author": "berkin",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "hjson": "^2.4.1",
     "marked": "^0.3.6",
