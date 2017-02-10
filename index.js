@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f4545c5a5a6cc7f35d34"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "04dd1e4b5b8d086b1404"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -22098,7 +22098,7 @@
 							{ className: 'item-line' },
 							_react2.default.createElement(
 								'a',
-								{ href: 'tel:{data.phone}' },
+								{ href: 'tel: ' + _resume2.default.phone },
 								_resume2.default.phone
 							)
 						),
@@ -22107,7 +22107,7 @@
 							{ className: 'item-line' },
 							_react2.default.createElement(
 								'a',
-								{ href: 'email:{data.email}' },
+								{ href: 'email: ' + _resume2.default.email },
 								_resume2.default.email
 							)
 						),
@@ -22116,7 +22116,7 @@
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '{data.social.linkedin}' },
+								{ href: _resume2.default.social.linkedin },
 								'Linked In'
 							)
 						),
@@ -22125,17 +22125,8 @@
 							null,
 							_react2.default.createElement(
 								'a',
-								{ href: '{data.social.github}' },
+								{ href: _resume2.default.social.github },
 								'Github'
-							)
-						),
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '{data.social.dribbble}' },
-								'Dribbble'
 							)
 						)
 					),
@@ -23567,9 +23558,8 @@
 		"phone": "+90 507 498 8240",
 		"email": "berkin@kuyabiye.com",
 		"social": {
-			"linkedin": "https://linkedin.com/berkin.cirak",
-			"dribbble": "http://dribbble.com/berkin",
-			"github": "htpp://github.com/berkin"
+			"linkedin": "https://tr.linkedin.com/in/berkincirak",
+			"github": "https://github.com/berkin"
 		},
 		"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
 		"education": [

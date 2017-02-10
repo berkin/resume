@@ -12,11 +12,10 @@ const App = () => (
 				<h1 className="header"><strong>{data.name}</strong></h1>
 				<h2 className="sub-header">{data.title}</h2>
 				<ul className="horizontal-list">
-					<li className="item-line"><a href="tel:{data.phone}">{data.phone}</a></li>
-					<li className="item-line"><a href="email:{data.email}">{data.email}</a></li>
-					<li><a href="{data.social.linkedin}">Linked In</a></li>
-					<li><a href="{data.social.github}">Github</a></li>
-					<li><a href="{data.social.dribbble}">Dribbble</a></li>
+					<li className="item-line"><a href={`tel: ${data.phone}`}>{data.phone}</a></li>
+					<li className="item-line"><a href={`email: ${data.email}`}>{data.email}</a></li>
+					<li><a href={data.social.linkedin}>Linked In</a></li>
+					<li><a href={data.social.github}>Github</a></li>
 				</ul>
 				<div className="summary" dangerouslySetInnerHTML={{ __html: marked(data.summary) }} />
 			</div>
