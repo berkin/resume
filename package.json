@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "concurrently --kill-others \"npm webpack-dev-server\"",
     "watch": "webpack --watch",
     "webpack-dev-server": "webpack-dev-server",
-	"start": "node server.js"
+	"start": "node server.js",
+	"start2": "webpack-dev-server --progress --inline --hot"
   },
   "author": "berkin",
   "license": "MIT",

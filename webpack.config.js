@@ -4,13 +4,11 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: [
-		'./main.js',
-		'webpack/hot/dev-server',
-		'webpack-dev-server/client?http://localhost:3333/'],
+	entry: './main.js',
 	output: {
-		path: '/build/',
-		filename: 'index.js'
+		path: __dirname,
+		filename: 'index.js',
+		publicPath: '/build/'
 	},
 	devtool: 'source-map',
 	devServer: {

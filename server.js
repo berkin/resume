@@ -5,12 +5,12 @@ var path = require('path');
 
 var compiler = webpack(config);
 var server = new WebpackDevServer(compiler, {
-	  contentBase: 'build',
-	  hot: true,
-	  filename: 'index.js',
-	  publicPath: '/',
-	  stats: {
-		      colors: true,
-		    },
+	contentBase: 'build',
+	hot: true,
+	filename: 'index.js',
+	publicPath: '/',
+	stats: {
+		colors: true
+	}
 });
 server.listen(3333, 'localhost', function() {});
