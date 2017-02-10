@@ -6,9 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "webpack-dev-server": "webpack-dev-server",
-	"start": "node server.js",
-	"start2": "webpack-dev-server --progress --inline --hot"
+	"start": "webpack-dev-server --progress --inline --hot"
   },
   "author": "berkin",
   "license": "MIT",
