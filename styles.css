@@ -1344,7 +1344,8 @@ html, button, input, select, textarea,
 .main-content {
   background: #fff;
   border: 1px solid #e3e3e3;
-  padding: 25px;
+  border-radius: 10px;
+  padding: 40px;
   margin: 25px; }
 
 .avatar {
