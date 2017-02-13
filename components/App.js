@@ -21,8 +21,8 @@ const App = () => (
 					</li>
 					<li className="item-line">
 						<a href={`email: ${data.email}`}>
-						<Isvg src="assets/img/social/envelope-square.svg" />
-						<span className="text">{data.email}</span>
+							<Isvg src="assets/img/social/envelope-square.svg" />
+							<span className="text">{data.email}</span>
 						</a>
 					</li>
 					<li>
