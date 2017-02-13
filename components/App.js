@@ -1,6 +1,7 @@
 import React from 'react';
 import marked from 'marked';
 import data from '../data/resume.hjson';
+import Isvg from 'react-inlinesvg';
 import '../assets/css/src/main.scss';
 
 
@@ -12,10 +13,30 @@ const App = () => (
 				<h1 className="header"><strong>{data.name}</strong></h1>
 				<h2 className="sub-header">{data.title}</h2>
 				<ul className="horizontal-list">
-					<li className="item-line"><a href={`tel: ${data.phone}`}>{data.phone}</a></li>
-					<li className="item-line"><a href={`email: ${data.email}`}>{data.email}</a></li>
-					<li><a href={data.social.linkedin}>Linked In</a></li>
-					<li><a href={data.social.github}>Github</a></li>
+					<li className="item-line">
+						<a href={`tel: ${data.phone}`}>
+							<Isvg src="assets/img/social/phone-square.svg" />
+							<span className="text">{data.phone}</span>
+						</a>
+					</li>
+					<li className="item-line">
+						<a href={`email: ${data.email}`}>
+						<Isvg src="assets/img/social/envelope-square.svg" />
+						<span className="text">{data.email}</span>
+						</a>
+					</li>
+					<li>
+						<a href={data.social.linkedin}>
+							<Isvg src="assets/img/social/linkedin-square.svg" />
+							<span className="text">Linked In</span>
+						</a>
+					</li>
+					<li>
+						<a href={data.social.github}>
+							<Isvg src="assets/img/social/github-square.svg" />
+							<span className="text">Github</span>
+						</a>
+					</li>
 				</ul>
 				<div className="summary" dangerouslySetInnerHTML={{ __html: marked(data.summary) }} />
 			</div>

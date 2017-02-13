@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 }
 
+$highlight-color: #0a9ae6;
+
 body {
 	background: #f4f4f4;
 	color: #333;
@@ -60,7 +62,7 @@ h2 {
 }
 
 a {
-	color: #0a9ae6;
+	color: $highlight-color;
 	text-decoration: none;
 }
 
@@ -72,7 +74,7 @@ a {
 
 	li {
 		float: left;
-		margin: 0 20px 2px 0;
+		margin: 0 20px 5px 0;
 
 		&.item-line {
 			float: none;
@@ -169,5 +171,25 @@ ul {
 				margin-left: 0;
 			}
 		}
+	}
+
+}
+
+.isvg {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+
+	margin: -1px 5px 0 0;
+	vertical-align: middle;
+
+	svg {
+		width: 100%;
+		height: 100%;
+		fill: $highlight-color;
+	}
+	+ .text {
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
