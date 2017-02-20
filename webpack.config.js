@@ -33,11 +33,7 @@ module.exports = [{
       __dirname: false
     },
     externals: nodeExternals(),
-	plugins: productionPluginDefine.concat([
-		new ExtractTextPlugin('./styles.css', {
-			allChunks: true
-		})
-	]),
+	plugins: productionPluginDefine,
     module: {
 		loaders: [
 			{
@@ -49,10 +45,14 @@ module.exports = [{
 				exclude: /node_modules/,
 				loaders: ['babel?presets[]=es2015,presets[]=react']
 			},
-			{
-				test: /\.scss$/,
-				loader: ExtractTextPlugin.extract('css!sass')
-			}
+      {
+        test: /\.css$/,
+        loader: 'null'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'css-loader/locals?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+      }
 		]
 	}
 },

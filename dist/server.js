@@ -464,7 +464,24 @@ module.exports =
 /* 8 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
+	module.exports = {
+		"pure-g": "main__pure-g___qGE-p",
+		"main-container": "main__main-container___1sYCD",
+		"main-content": "main__main-content___2RTZv",
+		"avatar": "main__avatar___3rX8e",
+		"box": "main__box___3x5rT",
+		"horizontal-list": "main__horizontal-list___2NhEV",
+		"item-line": "main__item-line___3-9FH",
+		"general-list": "main__general-list___2GQvl",
+		"date": "main__date___qG7Ji",
+		"label": "main__label___d8Ewb",
+		"title": "main__title___3IKJJ",
+		"content": "main__content___2BfLq",
+		"header": "main__header___4gX7p",
+		"sub-header": "main__sub-header___8kFDf",
+		"isvg": "main__isvg___1_g2c",
+		"text": "main__text___1sS47"
+	};
 
 /***/ },
 /* 9 */
@@ -480,7 +497,7 @@ module.exports =
 		var body = _ref.body,
 		    title = _ref.title;
 
-		return "\n<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>" + title + "</title>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<link rel=\"stylesheet\" href=\"/assets/index.css\" />\n\t </head>\n\t<body>\n\t\t<div id=\"app\">" + body + "</div>\n\t</body>\n\t<script src=\"/assets/bundle.js\"></script>\n</html>\n  ";
+		return "\n<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>" + title + "</title>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<link rel=\"stylesheet\" href=\"/assets/styles.css\" />\n\t </head>\n\t<body>\n\t\t<div id=\"app\">" + body + "</div>\n\t</body>\n\t<script src=\"/assets/bundle.js\"></script>\n</html>\n  ";
 	};
 
 /***/ }
