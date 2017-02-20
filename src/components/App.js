@@ -1,8 +1,8 @@
 import React from 'react';
 import marked from 'marked';
-import data from '../data/resume.hjson';
+import data from '../../data/resume.hjson';
 import Isvg from 'react-inlinesvg';
-import '../assets/css/src/main.scss';
+import '../../assets/css/src/main.scss';
 
 
 const App = () => (
@@ -73,7 +73,6 @@ const App = () => (
 				)
 				}
 			</ul>
-
 			<h1>Conferences</h1>
 			<ul className="general-list">
 				{

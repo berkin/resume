@@ -6,11 +6,12 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --progress --inline --hot"
+    "start": "cd dist && node server"
   },
   "author": "berkin",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.14.1",
     "hjson": "^2.4.1",
     "marked": "^0.3.6",
     "purecss": "^0.6.2",
@@ -39,7 +40,8 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-node-externals": "^1.5.4"
   },
   "repository": {
     "type": "git",
