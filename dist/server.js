@@ -72,15 +72,16 @@ module.exports =
 	server.use('/assets', _express2.default.static('assets'));
 
 	server.get('/', function (req, res) {
-	  var appString = (0, _server.renderToString)(_react2.default.createElement(_App2.default, null));
+		var appString = (0, _server.renderToString)(_react2.default.createElement(_App2.default, null));
 
-	  res.send((0, _template2.default)({
-	    body: appString,
-	    title: 'Berkin Berkcan Çırak\'s Resume'
-	  }));
+		res.send((0, _template2.default)({
+			body: appString,
+			title: 'Berkin Berkcan Çırak\'s Resume'
+		}));
 	});
 
 	server.listen(3444);
+	console.log('listening 3444');
 
 /***/ },
 /* 1 */

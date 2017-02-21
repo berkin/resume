@@ -3,39 +3,39 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
-var nodeExternals = require('webpack-node-externals');
+const nodeExternals = require('webpack-node-externals');
 
-var isProduction = process.env.NODE_ENV === 'production';
-var productionPluginDefine = isProduction ? [
-  new webpack.DefinePlugin({'process.env': {'NODE_ENV': JSON.stringify('production')}})
+const isProduction = process.env.NODE_ENV === 'production';
+const productionPluginDefine = isProduction ? [
+	new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } })
 ] : [];
 
-var clientLoaders = isProduction ? productionPluginDefine.concat([
-  new webpack.optimize.DedupePlugin(),
-  new webpack.optimize.OccurrenceOrderPlugin(),
-  new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false }, sourceMap: false })
+const clientLoaders = isProduction ? productionPluginDefine.concat([
+	new webpack.optimize.DedupePlugin(),
+	new webpack.optimize.OccurrenceOrderPlugin(),
+	new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false }, sourceMap: false })
 ]) : [];
 
 module.exports = [{
-    entry: './src/server.js',
-    output: {
-      path: './dist',
-      filename: 'server.js',
-      libraryTarget: 'commonjs2',
-      publicPath: '/'
-    },
-    target: 'node',
-    node: {
-      console: false,
-      global: false,
-      process: false,
-      Buffer: false,
-      __filename: false,
-      __dirname: false
-    },
-    externals: nodeExternals(),
+	entry: './src/server.js',
+	output: {
+		path: './dist',
+		filename: 'server.js',
+		libraryTarget: 'commonjs2',
+		publicPath: '/'
+	},
+	target: 'node',
+	node: {
+		console: false,
+		global: false,
+		process: false,
+		Buffer: false,
+		__filename: false,
+		__dirname: false
+	},
+	externals: nodeExternals(),
 	plugins: productionPluginDefine,
-    module: {
+	module: {
 		loaders: [
 			{
 				test: /\.hjson$/,
@@ -46,14 +46,14 @@ module.exports = [{
 				exclude: /node_modules/,
 				loaders: ['babel?presets[]=es2015,presets[]=react']
 			},
-      {
-        test: /\.css$/,
-        loader: 'null'
-      },
-      {
-        test: /\.scss$/,
-        loader: 'css-loader/locals?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-      }
+			{
+				test: /\.css$/,
+				loader: 'null'
+			},
+			{
+				test: /\.scss$/,
+				loader: 'css-loader/locals?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+			}
 		]
 	}
 },

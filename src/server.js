@@ -9,12 +9,13 @@ const server = express();
 server.use('/assets', express.static('assets'));
 
 server.get('/', (req, res) => {
-  const appString = renderToString(<App />);
+	const appString = renderToString(<App />);
 
-  res.send(template({
-    body: appString,
-    title: 'Berkin Berkcan Çırak\'s Resume'
-  }));
+	res.send(template({
+		body: appString,
+		title: 'Berkin Berkcan Çırak\'s Resume'
+	}));
 });
 
 server.listen(3444);
+console.log('listening 3444');

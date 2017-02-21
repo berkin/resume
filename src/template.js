@@ -1,5 +1,5 @@
 export default ({ body, title }) => {
-  return `
+	return `
 <!DOCTYPE html>
 <html>
 	<head>
