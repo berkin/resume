@@ -9,6 +9,7 @@ var isProduction = process.env.NODE_ENV === 'production';
 var productionPluginDefine = isProduction ? [
   new webpack.DefinePlugin({'process.env': {'NODE_ENV': JSON.stringify('production')}})
 ] : [];
+
 var clientLoaders = isProduction ? productionPluginDefine.concat([
   new webpack.optimize.DedupePlugin(),
   new webpack.optimize.OccurrenceOrderPlugin(),
@@ -57,7 +58,7 @@ module.exports = [{
 	}
 },
 {
-	entry: './src/browser.js',
+	entry: './src/client.js',
 	output: {
 		path: path.join(__dirname, '/dist/assets'),
 		filename: 'bundle.js',
