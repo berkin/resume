@@ -47,12 +47,8 @@ module.exports = [{
 				loaders: ['babel?presets[]=es2015,presets[]=react']
 			},
 			{
-				test: /\.css$/,
-				loader: 'null'
-			},
-			{
 				test: /\.scss$/,
-				loader: 'css-loader/locals?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+				loader: 'ignore-loader'
 			}
 		]
 	}
