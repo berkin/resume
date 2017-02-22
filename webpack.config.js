@@ -16,56 +16,12 @@ const clientLoaders = isProduction ? productionPluginDefine.concat([
 	new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false }, sourceMap: false })
 ]) : [];
 
-module.exports = [{
-	name: 'server',
-	entry: './src/server.js',
-	output: {
-		path: './dist',
-		filename: 'server.js',
-		libraryTarget: 'commonjs2',
-		publicPath: '/'
-	},
-	target: 'node',
-	node: {
-		console: false,
-		global: false,
-		process: false,
-		Buffer: false,
-		__filename: false,
-		__dirname: false
-	},
-	externals: nodeExternals(),
-	plugins: productionPluginDefine,
-	module: {
-		loaders: [
-			{
-				test: /\.hjson$/,
-				loader: 'hjson-loader'
-			},
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loaders: ['babel?presets[]=es2015,presets[]=react']
-			},
-			{
-				test: /\.scss$/,
-				loader: 'ignore-loader'
-			},
-			{
-				test: /.*\.(gif|png|jpe?g|svg)$/i,
-				loaders: [
-					'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
-					'image-webpack'
-				]
-			}
-		]
-	}
-},
+module.exports = [
 {
 	name: 'client',
 	entry: './src/client.js',
 	output: {
-		path: path.join(__dirname, './dist/assets'),
+		path: path.join(__dirname, 'dist/'),
 		filename: 'bundle.js',
 		publicPath: '/'
 	},
@@ -131,4 +87,51 @@ module.exports = [{
 			pure: path.join(__dirname, './node_modules/purecss/build/pure.css')
 		}
 	}
-}];
+},
+	{
+	name: 'server',
+	entry: './src/server.js',
+	output: {
+		path: path.join(__dirname, 'dist/'),
+		filename: 'server.js',
+		libraryTarget: 'commonjs2',
+		publicPath: '/'
+	},
+	target: 'node',
+	node: {
+		console: false,
+		global: false,
+		process: false,
+		Buffer: false,
+		__filename: false,
+		__dirname: false
+	},
+	externals: nodeExternals(),
+	plugins: productionPluginDefine,
+	module: {
+		loaders: [
+			{
+				test: /\.hjson$/,
+				loader: 'hjson-loader'
+			},
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loaders: ['babel?presets[]=es2015,presets[]=react']
+			},
+			{
+				test: /\.scss$/,
+				loader: 'ignore-loader'
+			},
+			{
+				test: /.*\.(gif|png|jpe?g|svg)$/i,
+				loaders: [
+					'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
+					'image-webpack'
+				]
+			}
+		]
+	}
+},
+
+];

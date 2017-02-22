@@ -4,7 +4,6 @@ import Isvg from 'react-inlinesvg';
 import data from '../../data/resume.hjson';
 import '../assets/css/main.scss';
 
-
 const App = () => (
 	<div className="main-container pure-g">
 		<div className="pure-u-1 main-content">

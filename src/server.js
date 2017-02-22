@@ -7,7 +7,7 @@ import template from './template';
 const server = express();
 
 server.use('/assets', express.static('assets'));
-
+server.use(express.static(__dirname));
 server.get('/', (req, res) => {
 	const appString = renderToString(<App />);
 
