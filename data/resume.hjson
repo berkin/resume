@@ -1,7 +1,7 @@
 {
 	name: Berkin Berkcan Çırak
 	title: Front-End Developer
-	avatar: assets/img/berkin-berkcan-cirak.jpg
+	avatar: berkin-berkcan-cirak.jpg
 	phone: +90 507 498 8240
 	email: berkin@kuyabiye.com
 	social: {
@@ -29,7 +29,7 @@
 			end: Present
 			company: Come On!
 			title: Senior Front-End Developer
-			description: 
+			description:
 				'''
 				- ComeOn is a Swedish online gaming, betting and casino portal.
 				- Modern workflow techniques including React, ES6, Webpack, Sass, Gulp
@@ -41,7 +41,7 @@
 			end: March 2016
 			company: Garanti Technology
 			title: Senior Front-End Developer
-			description: 
+			description:
 				'''
 				- Responsible for the front-end architecture of a large scale single-page CRM application.
 				- Developed re-usable modules and javascript plugins.
@@ -56,7 +56,7 @@
 			end: July 2013
 			company: Nexum Boğaziçi
 			title: Senior Front-End Developer
-			description: 
+			description:
 				'''
 				- Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.
 				- Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.
@@ -72,7 +72,7 @@
 			end: April 2011
 			company: Haberturk
 			title: Full Stack Developer
-			description: 
+			description:
 				'''
 				- Leading media company in Turkey\n- Maintenance of backend and frontend for the multisite network on daily basis.
 				- Adding new pages and features, performance optimization and bug fixing.
@@ -91,7 +91,7 @@
 			end: July 2013
 			company: Freelance
 			title: Full Stack Developer
-			description: 
+			description:
 				'''
 				- Work as a front-end developer for the new design of [(ING BANK Turkey)](http://ingbank.com.tr).
 				- Developed a javascript framework for calculation tools.
@@ -106,7 +106,7 @@
 			end: 2010
 			company: Siyah Balık
 			title: Full Stack Developer
-			description: 
+			description:
 				'''
 				- Focused on e-commerce. Built couple of e-commerce websites using open source e-commerce platforms including osCommerce, Zen-cart, Magento.
 				- Worked on e-commerce platform's administration panel to improve UX and design.
@@ -120,7 +120,7 @@
 			end: 2007
 			company: Mor-Tel
 			title: Full Stack Developer
-			description: 
+			description:
 				'''
 				- Built applications like instant messaging, sms services by using Telsim's sms gateway.
 				- Developed a smart portal which includes news, social network, calendar, affiliate system from scratch using technologies asp, MsSql and native javascript.
@@ -131,7 +131,7 @@
 			end: 2005
 			company: Erasmus Information Technology
 			title: Web Designer
-			description: 
+			description:
 				'''
 				- Focused on e-commerce, designed online book store.
 				'''

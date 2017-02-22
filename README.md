@@ -11,3 +11,5 @@
 - [x] serve from github pages
 - [x] arrange file structure
 - [ ] uglify, concat svg, js, css
+- [ ] npm run commands fix
+- [ ] image loader fix	

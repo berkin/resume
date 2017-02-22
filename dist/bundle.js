@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "454567b2f66c3ee5a691"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5cfc4f6aef702808ca56"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -570,7 +570,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/build/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -22053,13 +22053,13 @@
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
-	var _resume = __webpack_require__(180);
-	
-	var _resume2 = _interopRequireDefault(_resume);
-	
-	var _reactInlinesvg = __webpack_require__(181);
+	var _reactInlinesvg = __webpack_require__(180);
 	
 	var _reactInlinesvg2 = _interopRequireDefault(_reactInlinesvg);
+	
+	var _resume = __webpack_require__(196);
+	
+	var _resume2 = _interopRequireDefault(_resume);
 	
 	__webpack_require__(197);
 	
@@ -22078,7 +22078,7 @@
 					_react2.default.createElement(
 						'figure',
 						{ className: 'avatar' },
-						_react2.default.createElement('img', { src: _resume2.default.avatar, alt: _resume2.default.name })
+						_react2.default.createElement('img', { src: __webpack_require__(198)("./" + _resume2.default.avatar), alt: _resume2.default.name })
 					),
 					_react2.default.createElement(
 						'h1',
@@ -22103,7 +22103,7 @@
 							_react2.default.createElement(
 								'a',
 								{ href: 'tel: ' + _resume2.default.phone },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/phone-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/phone-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -22117,7 +22117,7 @@
 							_react2.default.createElement(
 								'a',
 								{ href: 'email: ' + _resume2.default.email },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/envelope-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/envelope-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -22131,7 +22131,7 @@
 							_react2.default.createElement(
 								'a',
 								{ href: _resume2.default.social.linkedin },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/linkedin-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/linkedin-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -22145,7 +22145,7 @@
 							_react2.default.createElement(
 								'a',
 								{ href: _resume2.default.social.github },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/github-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/github-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -23573,111 +23573,6 @@
 
 /***/ },
 /* 180 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		"name": "Berkin Berkcan Çırak",
-		"title": "Front-End Developer",
-		"avatar": "assets/img/berkin-berkcan-cirak.jpg",
-		"phone": "+90 507 498 8240",
-		"email": "berkin@kuyabiye.com",
-		"social": {
-			"linkedin": "https://tr.linkedin.com/in/berkincirak",
-			"github": "https://github.com/berkin"
-		},
-		"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
-		"education": [
-			{
-				"title": "Bachelor",
-				"school": "Hacettepe University",
-				"faculty": "Physics Engineering",
-				"end": 2004
-			}
-		],
-		"experiences": [
-			{
-				"begin": "March 2016",
-				"end": "Present",
-				"company": "Come On!",
-				"title": "Senior Front-End Developer",
-				"description": "- ComeOn is a Swedish online gaming, betting and casino portal.\n- Modern workflow techniques including React, ES6, Webpack, Sass, Gulp\n- Developing the company’s mobile gaming platform from scratch with React"
-			},
-			{
-				"begin": "July 2013",
-				"end": "March 2016",
-				"company": "Garanti Technology",
-				"title": "Senior Front-End Developer",
-				"description": "- Responsible for the front-end architecture of a large scale single-page CRM application.\n- Developed re-usable modules and javascript plugins.\n- Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n- Mentored the backend and front-end developers about developing javascript applications.\n- Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n- Developed SPA single-page applications for pension system and credit cards application."
-			},
-			{
-				"begin": "April 2011",
-				"end": "July 2013",
-				"company": "Nexum Boğaziçi",
-				"title": "Senior Front-End Developer",
-				"description": "- Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.\n- Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.\n- Designed and built the front-end of wap.turkcell.com for low-end feature phones.\n- Responsible for design and front-end development of Sony's dealer portal Sony1 which is active in 36 countries.\n- Lead front-end developer of large-scale, cutting-edge websites of Turkcell including Turkcell Store, Turkcell Online Services, Turkcell E-Bill and Turkcell E-Bill Mobile.\n- Designed and developed an administration theme which is used in every project of the company. Also used as a stand-alone project of BSH's work order system BSH MIP.\n- Added features to the application of Sony's Tablet."
-			},
-			{
-				"begin": "April 2010",
-				"end": "April 2011",
-				"company": "Haberturk",
-				"title": "Full Stack Developer",
-				"description": "- Leading media company in Turkey\\n- Maintenance of backend and frontend for the multisite network on daily basis.\n- Adding new pages and features, performance optimization and bug fixing.\n- Perform cross browser testing and debugging to eliminate UI/JavaScript bugs in supported browsers (IE 6-7-8-9, Firefox, Chrome & Safari).\n- As part of the migration the front-end of haberturk.com has been completely re-architectured and re-developed from scratch, minimizing the cross-browser issues, and optimization.\n- Lead front-end developer and backend developer on the launch of the bloomberght.com.\n- Directly responsible for all front-end development of the haberturk.com (including the sub-sites), bloomberght.com.\n- Responsible of the ads integration to the multi-site network. Researching and developing new ad features and optimization of the ads.\n- Directly responsible of SEO. Monitoring google analytics, web master tools and developing for seo purposes on daily basis.\n- Back-end and front-end developer of Referendum 2010 sub-site. Parse and serve data of the results for TV and website.\n- Developer of the video portal re-design video.haberturk.com."
-			},
-			{
-				"begin": "January 2010",
-				"end": "July 2013",
-				"company": "Freelance",
-				"title": "Full Stack Developer",
-				"description": "- Work as a front-end developer for the new design of [(ING BANK Turkey)](http://ingbank.com.tr).\n- Developed a javascript framework for calculation tools.\n- Various forms of calculations could be created easily using the framework [ex. Loan Calculator](https://www.ingbank.com.tr/en/knowledge-base/loans#ihtiyac-kredisi).\n- Front-end developer of the internet banking website of ING BANK Turkey [e-bank website](https://internetsubesi.ingbank.com.tr/). It is the first responsive internet banking website in Turkey. Developed custom plugins like virtual keyboard, responsive tables.\n- Designed and developed Erdoganlar Bisiklet (erdoganlarbisiklet.com). It is an online bike store which is based on magento.\n- Lead front-end and back-end developer of the video tutorial website [\"The Maths Tutor\"](http://themathstutor.com.au). It is a responsive website which is based on wordpress."
-			},
-			{
-				"begin": 2008,
-				"end": 2010,
-				"company": "Siyah Balık",
-				"title": "Full Stack Developer",
-				"description": "- Focused on e-commerce. Built couple of e-commerce websites using open source e-commerce platforms including osCommerce, Zen-cart, Magento.\n- Worked on e-commerce platform's administration panel to improve UX and design.\n- Integrated credit card payment solutions for Magento and Zen-Cart.\\n- Designed and Developed erdoganlarbisiklet.com with Magento.\n- Experienced with Joomla. Developed fulbright.org.tr, emtains.com, armapr.com\n- Developed company projects (storemia.com, kuyabiye.com and criball.com) from scratch using Symfony Framework and Doctrine."
-			},
-			{
-				"begin": 2005,
-				"end": 2007,
-				"company": "Mor-Tel",
-				"title": "Full Stack Developer",
-				"description": "- Built applications like instant messaging, sms services by using Telsim's sms gateway.\n- Developed a smart portal which includes news, social network, calendar, affiliate system from scratch using technologies asp, MsSql and native javascript."
-			},
-			{
-				"begin": 2004,
-				"end": 2005,
-				"company": "Erasmus Information Technology",
-				"title": "Web Designer",
-				"description": "- Focused on e-commerce, designed online book store."
-			}
-		],
-		"conferences": [
-			{
-				"title": "Fluent",
-				"date": 2014,
-				"location": "San Fransisco"
-			},
-			{
-				"title": "Jsist",
-				"date": 2014,
-				"location": "İstanbul"
-			},
-			{
-				"title": "UX Alive",
-				"date": 2015,
-				"location": "İstanbul"
-			},
-			{
-				"title": "Node Interactive",
-				"date": 2016,
-				"location": "Amsterdam"
-			}
-		]
-	};
-
-/***/ },
-/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23692,19 +23587,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _once = __webpack_require__(182);
+	var _once = __webpack_require__(181);
 	
 	var _once2 = _interopRequireDefault(_once);
 	
-	var _httpplease = __webpack_require__(184);
+	var _httpplease = __webpack_require__(183);
 	
 	var _httpplease2 = _interopRequireDefault(_httpplease);
 	
-	var _oldiexdomain = __webpack_require__(194);
+	var _oldiexdomain = __webpack_require__(193);
 	
 	var _oldiexdomain2 = _interopRequireDefault(_oldiexdomain);
 	
-	var _shouldComponentUpdate = __webpack_require__(196);
+	var _shouldComponentUpdate = __webpack_require__(195);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -24033,10 +23928,10 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var wrappy = __webpack_require__(183)
+	var wrappy = __webpack_require__(182)
 	module.exports = wrappy(once)
 	module.exports.strict = wrappy(onceStrict)
 	
@@ -24081,7 +23976,7 @@
 
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports) {
 
 	// Returns a wrapper function that returns a wrapped callback
@@ -24120,20 +24015,20 @@
 
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var
-	  cleanURL = __webpack_require__(185),
-	  XHR = __webpack_require__(186),
-	  delay = __webpack_require__(187),
-	  RequestError = __webpack_require__(188),
-	  Response = __webpack_require__(189),
-	  Request = __webpack_require__(190),
-	  extend = __webpack_require__(192),
-	  once = __webpack_require__(193);
+	  cleanURL = __webpack_require__(184),
+	  XHR = __webpack_require__(185),
+	  delay = __webpack_require__(186),
+	  RequestError = __webpack_require__(187),
+	  Response = __webpack_require__(188),
+	  Request = __webpack_require__(189),
+	  extend = __webpack_require__(191),
+	  once = __webpack_require__(192);
 	
 	var i,
 	    createError = RequestError.create;
@@ -24338,7 +24233,7 @@
 
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24353,14 +24248,14 @@
 
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports) {
 
 	module.exports = window.XMLHttpRequest;
 
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24381,14 +24276,14 @@
 
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Response = __webpack_require__(189);
-	var extractResponseProps = __webpack_require__(191);
-	var extend = __webpack_require__(192);
+	var Response = __webpack_require__(188);
+	var extractResponseProps = __webpack_require__(190);
+	var extend = __webpack_require__(191);
 	
 	function RequestError(message, props) {
 	  var err = new Error(message);
@@ -24423,13 +24318,13 @@
 
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Request = __webpack_require__(190);
-	var extractResponseProps = __webpack_require__(191);
+	var Request = __webpack_require__(189);
+	var extractResponseProps = __webpack_require__(190);
 	
 	function Response(props) {
 	  this.request = props.request;
@@ -24453,7 +24348,7 @@
 
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24502,12 +24397,12 @@
 
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var extend = __webpack_require__(192);
+	var extend = __webpack_require__(191);
 	
 	module.exports = function(req) {
 	  var xhr = req.xhr;
@@ -24541,7 +24436,7 @@
 
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports) {
 
 	module.exports = extend
@@ -24564,7 +24459,7 @@
 
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24583,14 +24478,14 @@
 
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var
-	  urllite = __webpack_require__(195),
-	  once = __webpack_require__(193);
+	  urllite = __webpack_require__(194),
+	  once = __webpack_require__(192);
 	
 	var warningShown = false;
 	
@@ -24657,7 +24552,7 @@
 
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports) {
 
 	(function() {
@@ -24728,7 +24623,7 @@
 
 
 /***/ },
-/* 196 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24781,11 +24676,185 @@
 	exports.default = { shouldComponentUpdate: shouldComponentUpdate, shouldComponentUpdateContext: shouldComponentUpdateContext };
 
 /***/ },
+/* 196 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"name": "Berkin Berkcan Çırak",
+		"title": "Front-End Developer",
+		"avatar": "berkin-berkcan-cirak.jpg",
+		"phone": "+90 507 498 8240",
+		"email": "berkin@kuyabiye.com",
+		"social": {
+			"linkedin": "https://tr.linkedin.com/in/berkincirak",
+			"github": "https://github.com/berkin"
+		},
+		"summary": "- 8+ years experience in interactive design & development\n- Specialized in hand-written oo JavaScript, standards-compliant XHTML/HTML and CSS with an emphasis on semantics, accessibility, performance, scalability, user experience and seo.\n- An aptitude for developing user interfaces across a variety of platforms from mobile apps to large scale websites.\n- Experienced in mobile technologies. Designed and developed cross-platforms, large scale mobile websites from smart phones to low-end feature phones.",
+		"education": [
+			{
+				"title": "Bachelor",
+				"school": "Hacettepe University",
+				"faculty": "Physics Engineering",
+				"end": 2004
+			}
+		],
+		"experiences": [
+			{
+				"begin": "March 2016",
+				"end": "Present",
+				"company": "Come On!",
+				"title": "Senior Front-End Developer",
+				"description": "- ComeOn is a Swedish online gaming, betting and casino portal.\n- Modern workflow techniques including React, ES6, Webpack, Sass, Gulp\n- Developing the company’s mobile gaming platform from scratch with React"
+			},
+			{
+				"begin": "July 2013",
+				"end": "March 2016",
+				"company": "Garanti Technology",
+				"title": "Senior Front-End Developer",
+				"description": "- Responsible for the front-end architecture of a large scale single-page CRM application.\n- Developed re-usable modules and javascript plugins.\n- Performed cross browser testing and debugging to eliminate UI/JavaScript bugs and memory leaks.\n- Mentored the backend and front-end developers about developing javascript applications.\n- Always stick to modern workflow techniques including automation via grunt, CSS preprocessor implementation via sass/compass, mvvm framework implementation via knockout.js, integration of amd via require.js.\n- Developed SPA single-page applications for pension system and credit cards application."
+			},
+			{
+				"begin": "April 2011",
+				"end": "July 2013",
+				"company": "Nexum Boğaziçi",
+				"title": "Senior Front-End Developer",
+				"description": "- Developed standards-compliant HTML, CSS and JavaScript for various clients including Akbank, Turkcell, Sony, BSH and Lenovo, focusing on mobile and desktop.\n- Built the front-end for Turkcell's mobile web site m.turkcell.com with jQuery Mobile. Utilized graceful degradation and progressive enhancement to support all mobile web browsers from iPhone, Android and Blackberry.\n- Designed and built the front-end of wap.turkcell.com for low-end feature phones.\n- Responsible for design and front-end development of Sony's dealer portal Sony1 which is active in 36 countries.\n- Lead front-end developer of large-scale, cutting-edge websites of Turkcell including Turkcell Store, Turkcell Online Services, Turkcell E-Bill and Turkcell E-Bill Mobile.\n- Designed and developed an administration theme which is used in every project of the company. Also used as a stand-alone project of BSH's work order system BSH MIP.\n- Added features to the application of Sony's Tablet."
+			},
+			{
+				"begin": "April 2010",
+				"end": "April 2011",
+				"company": "Haberturk",
+				"title": "Full Stack Developer",
+				"description": "- Leading media company in Turkey\\n- Maintenance of backend and frontend for the multisite network on daily basis.\n- Adding new pages and features, performance optimization and bug fixing.\n- Perform cross browser testing and debugging to eliminate UI/JavaScript bugs in supported browsers (IE 6-7-8-9, Firefox, Chrome & Safari).\n- As part of the migration the front-end of haberturk.com has been completely re-architectured and re-developed from scratch, minimizing the cross-browser issues, and optimization.\n- Lead front-end developer and backend developer on the launch of the bloomberght.com.\n- Directly responsible for all front-end development of the haberturk.com (including the sub-sites), bloomberght.com.\n- Responsible of the ads integration to the multi-site network. Researching and developing new ad features and optimization of the ads.\n- Directly responsible of SEO. Monitoring google analytics, web master tools and developing for seo purposes on daily basis.\n- Back-end and front-end developer of Referendum 2010 sub-site. Parse and serve data of the results for TV and website.\n- Developer of the video portal re-design video.haberturk.com."
+			},
+			{
+				"begin": "January 2010",
+				"end": "July 2013",
+				"company": "Freelance",
+				"title": "Full Stack Developer",
+				"description": "- Work as a front-end developer for the new design of [(ING BANK Turkey)](http://ingbank.com.tr).\n- Developed a javascript framework for calculation tools.\n- Various forms of calculations could be created easily using the framework [ex. Loan Calculator](https://www.ingbank.com.tr/en/knowledge-base/loans#ihtiyac-kredisi).\n- Front-end developer of the internet banking website of ING BANK Turkey [e-bank website](https://internetsubesi.ingbank.com.tr/). It is the first responsive internet banking website in Turkey. Developed custom plugins like virtual keyboard, responsive tables.\n- Designed and developed Erdoganlar Bisiklet (erdoganlarbisiklet.com). It is an online bike store which is based on magento.\n- Lead front-end and back-end developer of the video tutorial website [\"The Maths Tutor\"](http://themathstutor.com.au). It is a responsive website which is based on wordpress."
+			},
+			{
+				"begin": 2008,
+				"end": 2010,
+				"company": "Siyah Balık",
+				"title": "Full Stack Developer",
+				"description": "- Focused on e-commerce. Built couple of e-commerce websites using open source e-commerce platforms including osCommerce, Zen-cart, Magento.\n- Worked on e-commerce platform's administration panel to improve UX and design.\n- Integrated credit card payment solutions for Magento and Zen-Cart.\\n- Designed and Developed erdoganlarbisiklet.com with Magento.\n- Experienced with Joomla. Developed fulbright.org.tr, emtains.com, armapr.com\n- Developed company projects (storemia.com, kuyabiye.com and criball.com) from scratch using Symfony Framework and Doctrine."
+			},
+			{
+				"begin": 2005,
+				"end": 2007,
+				"company": "Mor-Tel",
+				"title": "Full Stack Developer",
+				"description": "- Built applications like instant messaging, sms services by using Telsim's sms gateway.\n- Developed a smart portal which includes news, social network, calendar, affiliate system from scratch using technologies asp, MsSql and native javascript."
+			},
+			{
+				"begin": 2004,
+				"end": 2005,
+				"company": "Erasmus Information Technology",
+				"title": "Web Designer",
+				"description": "- Focused on e-commerce, designed online book store."
+			}
+		],
+		"conferences": [
+			{
+				"title": "Fluent",
+				"date": 2014,
+				"location": "San Fransisco"
+			},
+			{
+				"title": "Jsist",
+				"date": 2014,
+				"location": "İstanbul"
+			},
+			{
+				"title": "UX Alive",
+				"date": 2015,
+				"location": "İstanbul"
+			},
+			{
+				"title": "Node Interactive",
+				"date": 2016,
+				"location": "Amsterdam"
+			}
+		]
+	};
+
+/***/ },
 /* 197 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./berkin-berkcan-cirak.jpg": 199,
+		"./berkin-berkcan.cirak-2.jpg": 200,
+		"./social/dribbble.svg": 201,
+		"./social/envelope-square.svg": 202,
+		"./social/github-square.svg": 203,
+		"./social/linkedin-square.svg": 204,
+		"./social/phone-square.svg": 205
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 198;
+
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan-cirak.jpg";
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan.cirak-2.jpg";
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/dribbble.svg";
+
+/***/ },
+/* 202 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/envelope-square.svg";
+
+/***/ },
+/* 203 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/github-square.svg";
+
+/***/ },
+/* 204 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/linkedin-square.svg";
+
+/***/ },
+/* 205 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/phone-square.svg";
+
 /***/ }
 /******/ ]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=bundle.js.map
