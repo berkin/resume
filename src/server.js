@@ -16,6 +16,6 @@ server.get('/', (req, res) => {
 		title: 'Berkin Berkcan Çırak\'s Resume'
 	}));
 });
-
-server.listen(3444);
-console.log('listening 3444');
+const app = server.listen(3444, function() {
+	console.log('Listening on port %d', app.address().port);
+});

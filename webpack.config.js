@@ -17,6 +17,7 @@ const clientLoaders = isProduction ? productionPluginDefine.concat([
 ]) : [];
 
 module.exports = [{
+	name: 'server',
 	entry: './src/server.js',
 	output: {
 		path: './dist',
@@ -49,14 +50,22 @@ module.exports = [{
 			{
 				test: /\.scss$/,
 				loader: 'ignore-loader'
+			},
+			{
+				test: /.*\.(gif|png|jpe?g|svg)$/i,
+				loaders: [
+					'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
+					'image-webpack'
+				]
 			}
 		]
 	}
 },
 {
+	name: 'client',
 	entry: './src/client.js',
 	output: {
-		path: path.join(__dirname, '/dist/assets'),
+		path: path.join(__dirname, './dist/assets'),
 		filename: 'bundle.js',
 		publicPath: '/'
 	},
@@ -80,9 +89,36 @@ module.exports = [{
 			{
 				test: /\.scss$/,
 				loader: ExtractTextPlugin.extract('css!sass')
+			},
+			{
+				test: /.*\.(gif|png|jpe?g|svg)$/i,
+				loaders: [
+					'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
+					'image-webpack'
+				]
 			}
 		]
 	},
+	imageWebpackLoader: {
+		mozjpeg: {
+			quality: 65
+		},
+		pngquant: {
+			quality: '65-90',
+			speed: 4
+		},
+		svgo: {
+			plugins: [
+				{
+					removeViewBox: false
+				},
+				{
+					removeEmptyAttrs: false
+				}
+			]
+		}
+	},
+
 	plugins: clientLoaders.concat([
 		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin('./styles.css', {

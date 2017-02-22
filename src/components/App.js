@@ -1,39 +1,39 @@
 import React from 'react';
 import marked from 'marked';
-import data from '../../data/resume.hjson';
 import Isvg from 'react-inlinesvg';
-import '../../assets/css/src/main.scss';
+import data from '../../data/resume.hjson';
+import '../assets/css/main.scss';
 
 
 const App = () => (
 	<div className="main-container pure-g">
 		<div className="pure-u-1 main-content">
 			<div className="box">
-				<figure className="avatar"><img src={data.avatar} alt={data.name} /></figure>
+				<figure className="avatar"><img src={require(`../assets/img/${data.avatar}`)} alt={data.name} /></figure>
 				<h1 className="header"><strong>{data.name}</strong></h1>
 				<h2 className="sub-header">{data.title}</h2>
 				<ul className="horizontal-list">
 					<li className="item-line">
 						<a href={`tel: ${data.phone}`}>
-							<Isvg src="assets/img/social/phone-square.svg" />
+							<Isvg src='../assets/img/social/phone-square.svg' />
 							<span className="text">{data.phone}</span>
 						</a>
 					</li>
 					<li className="item-line">
 						<a href={`email: ${data.email}`}>
-							<Isvg src="assets/img/social/envelope-square.svg" />
+							<Isvg src='../assets/img/social/envelope-square.svg' />
 							<span className="text">{data.email}</span>
 						</a>
 					</li>
 					<li>
 						<a href={data.social.linkedin}>
-							<Isvg src="assets/img/social/linkedin-square.svg" />
+							<Isvg src='../assets/img/social/linkedin-square.svg' />
 							<span className="text">Linked In</span>
 						</a>
 					</li>
 					<li>
 						<a href={data.social.github}>
-							<Isvg src="assets/img/social/github-square.svg" />
+							<Isvg src='../assets/img/social/github-square.svg' />
 							<span className="text">Github</span>
 						</a>
 					</li>

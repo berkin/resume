@@ -61,7 +61,7 @@ module.exports =
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _template = __webpack_require__(9);
+	var _template = __webpack_require__(17);
 
 	var _template2 = _interopRequireDefault(_template);
 
@@ -79,9 +79,9 @@ module.exports =
 			title: 'Berkin Berkcan Çırak\'s Resume'
 		}));
 	});
-
-	server.listen(3444);
-	console.log('listening 3444');
+	var app = server.listen(3444, function () {
+		console.log('Listening on port %d', app.address().port);
+	});
 
 /***/ },
 /* 1 */
@@ -119,13 +119,13 @@ module.exports =
 
 	var _marked2 = _interopRequireDefault(_marked);
 
-	var _resume = __webpack_require__(6);
-
-	var _resume2 = _interopRequireDefault(_resume);
-
-	var _reactInlinesvg = __webpack_require__(7);
+	var _reactInlinesvg = __webpack_require__(6);
 
 	var _reactInlinesvg2 = _interopRequireDefault(_reactInlinesvg);
+
+	var _resume = __webpack_require__(7);
+
+	var _resume2 = _interopRequireDefault(_resume);
 
 	__webpack_require__(8);
 
@@ -144,7 +144,7 @@ module.exports =
 					_react2.default.createElement(
 						'figure',
 						{ className: 'avatar' },
-						_react2.default.createElement('img', { src: _resume2.default.avatar, alt: _resume2.default.name })
+						_react2.default.createElement('img', { src: __webpack_require__(9)("./" + _resume2.default.avatar), alt: _resume2.default.name })
 					),
 					_react2.default.createElement(
 						'h1',
@@ -169,7 +169,7 @@ module.exports =
 							_react2.default.createElement(
 								'a',
 								{ href: 'tel: ' + _resume2.default.phone },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/phone-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/phone-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -183,7 +183,7 @@ module.exports =
 							_react2.default.createElement(
 								'a',
 								{ href: 'email: ' + _resume2.default.email },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/envelope-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/envelope-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -197,7 +197,7 @@ module.exports =
 							_react2.default.createElement(
 								'a',
 								{ href: _resume2.default.social.linkedin },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/linkedin-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/linkedin-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -211,7 +211,7 @@ module.exports =
 							_react2.default.createElement(
 								'a',
 								{ href: _resume2.default.social.github },
-								_react2.default.createElement(_reactInlinesvg2.default, { src: 'assets/img/social/github-square.svg' }),
+								_react2.default.createElement(_reactInlinesvg2.default, { src: '../assets/img/social/github-square.svg' }),
 								_react2.default.createElement(
 									'span',
 									{ className: 'text' },
@@ -354,10 +354,16 @@ module.exports =
 /* 6 */
 /***/ function(module, exports) {
 
+	module.exports = require("react-inlinesvg");
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
 	module.exports = {
 		"name": "Berkin Berkcan Çırak",
 		"title": "Front-End Developer",
-		"avatar": "assets/img/berkin-berkcan-cirak.jpg",
+		"avatar": "berkin-berkcan-cirak.jpg",
 		"phone": "+90 507 498 8240",
 		"email": "berkin@kuyabiye.com",
 		"social": {
@@ -456,12 +462,6 @@ module.exports =
 	};
 
 /***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	module.exports = require("react-inlinesvg");
-
-/***/ },
 /* 8 */
 /***/ function(module, exports) {
 
@@ -469,6 +469,75 @@ module.exports =
 
 /***/ },
 /* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var map = {
+		"./berkin-berkcan-cirak.jpg": 10,
+		"./berkin-berkcan.cirak-2.jpg": 11,
+		"./social/dribbble.svg": 12,
+		"./social/envelope-square.svg": 13,
+		"./social/github-square.svg": 14,
+		"./social/linkedin-square.svg": 15,
+		"./social/phone-square.svg": 16
+	};
+	function webpackContext(req) {
+		return __webpack_require__(webpackContextResolve(req));
+	};
+	function webpackContextResolve(req) {
+		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
+	};
+	webpackContext.keys = function webpackContextKeys() {
+		return Object.keys(map);
+	};
+	webpackContext.resolve = webpackContextResolve;
+	module.exports = webpackContext;
+	webpackContext.id = 9;
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan-cirak.jpg";
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan.cirak-2.jpg";
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/dribbble.svg";
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/envelope-square.svg";
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/github-square.svg";
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/linkedin-square.svg";
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/img/phone-square.svg";
+
+/***/ },
+/* 17 */
 /***/ function(module, exports) {
 
 	"use strict";
