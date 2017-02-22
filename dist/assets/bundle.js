@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "923f63c1cccbdf3e4437"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b07062c3b3f07222ef86"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -570,7 +570,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/assets/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -24817,43 +24817,43 @@
 /* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan-cirak.jpg";
+	module.exports = __webpack_require__.p + "img/berkin-berkcan-cirak.jpg";
 
 /***/ },
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/berkin-berkcan.cirak-2.jpg";
+	module.exports = __webpack_require__.p + "img/berkin-berkcan.cirak-2.jpg";
 
 /***/ },
 /* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/dribbble.svg";
+	module.exports = __webpack_require__.p + "img/dribbble.svg";
 
 /***/ },
 /* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/envelope-square.svg";
+	module.exports = __webpack_require__.p + "img/envelope-square.svg";
 
 /***/ },
 /* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/github-square.svg";
+	module.exports = __webpack_require__.p + "img/github-square.svg";
 
 /***/ },
 /* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/linkedin-square.svg";
+	module.exports = __webpack_require__.p + "img/linkedin-square.svg";
 
 /***/ },
 /* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "assets/img/phone-square.svg";
+	module.exports = __webpack_require__.p + "img/phone-square.svg";
 
 /***/ }
 /******/ ]);
