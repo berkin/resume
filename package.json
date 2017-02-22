@@ -4,10 +4,12 @@
   "description": "Berkin Berkcan Çırak's Resume",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress",
+    "build-dev": "webpack --progress",
+	"build-prod": "webpack -p --progress",
+	"build": "npm run build-prod && npm run server",
     "watch": "webpack --progress --watch",
     "server": "cd dist && node server",
-    "start": "npm run build && npm run server"
+    "start": "npm run build-dev && npm run server"
   },
   "author": "berkin",
   "license": "MIT",

@@ -23,7 +23,7 @@ module.exports = [
 		output: {
 			path: path.join(__dirname, 'dist/assets'),
 			filename: 'bundle.js',
-			publicPath: '/'
+			publicPath: '/assets/'
 		},
 		devtool: 'source-map',
 		devServer: {
@@ -49,7 +49,7 @@ module.exports = [
 				{
 					test: /.*\.(gif|png|jpe?g|svg)$/i,
 					loaders: [
-						'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
+						'file?hash=sha512&digest=hex&name=img/[name].[ext]',
 						'image-webpack'
 					]
 				}
