@@ -550,7 +550,7 @@ module.exports =
 		var body = _ref.body,
 		    title = _ref.title;
 
-		return "\n<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>" + title + "</title>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<link rel=\"stylesheet\" href=\"/styles.css\" />\n\t </head>\n\t<body>\n\t\t<div id=\"app\">" + body + "</div>\n\t</body>\n\t<script src=\"/bundle.js\"></script>\n</html>\n  ";
+		return "\n<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>" + title + "</title>\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t<link rel=\"stylesheet\" href=\"assets/styles.css\" />\n\t </head>\n\t<body>\n\t\t<div id=\"app\">" + body + "</div>\n\t</body>\n\t<script src=\"assets/bundle.js\"></script>\n</html>\n  ";
 	};
 
 /***/ }
