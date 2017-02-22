@@ -6,12 +6,12 @@ export default ({ body, title }) => {
 		<meta charset="UTF-8">
 		<title>${title}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="assets/styles.css" />
 	 </head>
 	<body>
 		<div id="app">${body}</div>
 	</body>
-	<script src="/bundle.js"></script>
+	<script src="assets/bundle.js"></script>
 </html>
   `;
 };
