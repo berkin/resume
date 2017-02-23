@@ -47,11 +47,15 @@ module.exports = [
 					loader: ExtractTextPlugin.extract('css!sass')
 				},
 				{
-					test: /.*\.(gif|png|jpe?g|svg)$/i,
+					test: /.*\.(gif|png|jpe?g)$/i,
 					loaders: [
 						'file?hash=sha512&digest=hex&name=img/[name].[ext]',
 						'image-webpack'
 					]
+				},
+				{
+					test: /\.svg$/,
+					loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
 				}
 			]
 		},

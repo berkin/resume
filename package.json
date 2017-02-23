@@ -4,10 +4,10 @@
   "description": "Berkin Berkcan Çırak's Resume",
   "main": "index.js",
   "scripts": {
-    "build-dev": "webpack --progress",
-	"build-prod": "webpack -p --progress",
-	"build": "npm run build-prod && npm run server",
-    "watch": "webpack --progress --watch",
+    "build-dev": "webpack --progress --inline --hot",
+    "build-prod": "webpack -p --progress",
+    "build": "npm run build-prod && npm run server",
+    "watch": "webpack-dev-server --progress --inline --hot",
     "server": "cd dist && node server",
     "start": "npm run build-dev && npm run server"
   },
@@ -46,6 +46,7 @@
     "path": "^0.12.7",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
+    "svg-react-loader": "^0.3.7",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-node-externals": "^1.5.4"

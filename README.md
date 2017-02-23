@@ -13,3 +13,4 @@
 - [ ] uglify, concat svg, js, css
 - [ ] npm run commands fix
 - [ ] image loader fix	
+- [ ] load svg as sprite, use inline svg

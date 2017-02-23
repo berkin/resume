@@ -3,6 +3,11 @@ import marked from 'marked';
 import Isvg from 'react-inlinesvg';
 import data from '../../data/resume.hjson';
 import '../assets/css/main.scss';
+import PhoneIcon from '../assets/img/social/phone-square.svg';
+import EnvelopeIcon from '../assets/img/social/envelope-square.svg';
+import LinkedinIcon from '../assets/img/social/linkedin-square.svg';
+import GithubIcon from '../assets/img/social/github-square.svg';
+
 
 const App = () => (
 	<div className="main-container pure-g">
@@ -14,25 +19,33 @@ const App = () => (
 				<ul className="horizontal-list">
 					<li className="item-line">
 						<a href={`tel: ${data.phone}`}>
-							<Isvg src='../assets/img/social/phone-square.svg' />
+							<span className="isvg">
+								<PhoneIcon />
+							</span>
 							<span className="text">{data.phone}</span>
 						</a>
 					</li>
 					<li className="item-line">
 						<a href={`email: ${data.email}`}>
-							<Isvg src='../assets/img/social/envelope-square.svg' />
+							<span className="isvg">
+								<EnvelopeIcon />
+							</span>
 							<span className="text">{data.email}</span>
 						</a>
 					</li>
 					<li>
 						<a href={data.social.linkedin}>
-							<Isvg src='../assets/img/social/linkedin-square.svg' />
+							<span className="isvg">
+								<LinkedinIcon />
+							</span>
 							<span className="text">Linked In</span>
 						</a>
 					</li>
 					<li>
 						<a href={data.social.github}>
-							<Isvg src='../assets/img/social/github-square.svg' />
+							<span className="isvg">
+								<GithubIcon />
+							</span>
 							<span className="text">Github</span>
 						</a>
 					</li>
