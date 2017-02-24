@@ -20,10 +20,9 @@
 
 ## client
 - use babel-polyfill to write in es6
-'''js
+```javascript
 module.exports = {
   entry: ["babel-polyfill", "./app/js"]
 };
-'''js
-
+```
 
