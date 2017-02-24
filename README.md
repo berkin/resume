@@ -14,3 +14,16 @@
 - [ ] npm run commands fix
 - [ ] image loader fix	
 - [ ] load svg as sprite, use inline svg
+
+# configuation
+- make common config to extend client and server.js
+
+## client
+- use babel-polyfill to write in es6
+'''js
+module.exports = {
+  entry: ["babel-polyfill", "./app/js"]
+};
+'''js
+
+
