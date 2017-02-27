@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-dev": "webpack --progress --inline --hot",
-    "build-prod": "rm -rf dist/* & webpack -p --progress & cp index.html dist/",
+    "build-prod": "rm -rf dist/*  & cp index.html dist/ & webpack -p --progress",
     "build": "npm run build-prod && npm run server",
     "watch": "webpack-dev-server --progress --inline --hot",
     "server": "cd dist && node server",
