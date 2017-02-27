@@ -23,7 +23,7 @@ module.exports = [
 		output: {
 			path: path.join(__dirname, 'dist/assets'),
 			filename: 'bundle.js',
-			publicPath: '/assets/'
+			publicPath: 'assets/'
 		},
 		devtool: 'source-map',
 		devServer: {
