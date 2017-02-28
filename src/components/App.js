@@ -1,6 +1,5 @@
 import React from 'react';
 import marked from 'marked';
-import Isvg from 'react-inlinesvg';
 import data from '../../data/resume.hjson';
 import '../assets/css/main.scss';
 import PhoneIcon from '../assets/img/social/phone-square.svg';
@@ -8,10 +7,14 @@ import EnvelopeIcon from '../assets/img/social/envelope-square.svg';
 import LinkedinIcon from '../assets/img/social/linkedin-square.svg';
 import GithubIcon from '../assets/img/social/github-square.svg';
 
-
 const App = () => (
 	<div className="main-container pure-g">
 		<div className="pure-u-1 main-content">
+			<ul class="horizontal-list">
+				<li>
+					<a href="assets/berkin.berkcan.cirak-resume.pdf">Download as pdf</a>
+				</li>
+			</ul>
 			<div className="box">
 				<figure className="avatar"><img src={require(`../assets/img/${data.avatar}`)} alt={data.name} /></figure>
 				<h1 className="header"><strong>{data.name}</strong></h1>

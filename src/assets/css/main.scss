@@ -21,7 +21,7 @@ html, button, input, select, textarea,
 }
 
 .main-container {
-	max-width: 960px;
+	max-width: 920px;
 	margin: auto;
 }
 .main-content {
@@ -185,12 +185,13 @@ ul {
 	vertical-align: middle;
 
 	svg {
-		width: 100%;
-		height: 100%;
+		width: 16px;
+		height: 16px;
 		fill: $highlight-color;
 	}
 	+ .text {
 		display: inline-block;
 		vertical-align: middle;
+		white-space: nowrap;
 	}
 }

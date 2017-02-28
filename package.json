@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build-dev": "webpack --progress --inline --hot",
-    "build-prod": "rm -rf dist/*  & cp index.html dist/ & webpack -p --progress",
-    "build": "npm run build-prod && npm run server",
+    "build-prod": "rm -rf dist/* && webpack -p --progress && cp src/index.html dist/",
+	"build-pdf": "wkhtmltopdf --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:3444 dist/assets/berkin.berkcan.cirak-resume.pdf",
+    "build": "npm run build-prod && npm run server && npm run build-pdf",
     "watch": "webpack-dev-server --progress --inline --hot",
     "server": "cd dist && node server",
     "start": "npm run build-dev && npm run server"

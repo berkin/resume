@@ -23,7 +23,7 @@ module.exports = [
 		output: {
 			path: path.join(__dirname, 'dist/assets'),
 			filename: 'bundle.js',
-			publicPath: 'assets/'
+			publicPath: '/assets/'
 		},
 		devtool: 'source-map',
 		devServer: {
@@ -128,11 +128,15 @@ module.exports = [
 					loader: 'ignore-loader'
 				},
 				{
-					test: /.*\.(gif|png|jpe?g|svg)$/i,
+					test: /.*\.(gif|png|jpe?g)$/i,
 					loaders: [
 						'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
 						'image-webpack'
 					]
+				},
+				{
+					test: /\.svg$/,
+					loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
 				}
 			]
 		}
