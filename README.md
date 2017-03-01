@@ -6,13 +6,13 @@
 - [x] add conferences
 - [x] make more mobile friendly
 - [x] update cv
-- [ ] add download link as pdf or doc
+- [x] add download link as pdf
 - [x] add social media icons
 - [x] serve from github pages
 - [x] arrange file structure
 - [ ] uglify, concat svg, js, css
-- [ ] npm run commands fix
-- [ ] image loader fix	
+- [x] npm run commands fix
+- [x] image loader fix	
 - [ ] load svg as sprite, use inline svg
 
 # configuation
