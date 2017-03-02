@@ -6,13 +6,28 @@ import PhoneIcon from '../assets/img/social/phone-square.svg';
 import EnvelopeIcon from '../assets/img/social/envelope-square.svg';
 import LinkedinIcon from '../assets/img/social/linkedin-square.svg';
 import GithubIcon from '../assets/img/social/github-square.svg';
+import PdfIcon from '../assets/img/file-pdf-o.svg';
+import PrintIcon from '../assets/img/print.svg';
 
 const App = () => (
 	<div className="main-container pure-g">
 		<div className="pure-u-1 main-content">
-			<ul className="horizontal-list">
+			<ul className="horizontal-list download-links">
 				<li>
-					<a href="assets/berkin.berkcan.cirak-resume.pdf">Download as pdf</a>
+					<a href="assets/berkin.berkcan.cirak-resume.pdf">
+						<span className="isvg">
+							<PdfIcon />
+						</span>
+						<span className="text">Download as pdf</span>
+					</a>
+				</li>
+				<li>
+					<a href="assets/berkin.berkcan.cirak-resume.pdf">
+						<span className="isvg">
+							<PrintIcon />
+						</span>
+						<span className="text">Print</span>
+					</a>
 				</li>
 			</ul>
 			<div className="box">

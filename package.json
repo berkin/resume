@@ -7,7 +7,7 @@
     "clean": "rm -rf dist/*",
     "build-dev": "webpack --progress --inline --hot",
     "build-prod": "npm run clean && webpack -p --progress",
-    "build-pdf": "wait-on http://localhost:3444/ && wkhtmltopdf --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:3444 dist/assets/berkin.berkcan.cirak-resume.pdf",
+    "build-pdf": "wait-on http://localhost:3444/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:3444 dist/assets/berkin.berkcan.cirak-resume.pdf",
     "build": "npm-run-all -s build-prod -p server build-pdf",
     "watch": "webpack-dev-server --progress --inline --hot",
     "server": "cd dist && node server",
