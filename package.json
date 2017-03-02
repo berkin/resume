@@ -4,10 +4,11 @@
   "description": "Berkin Berkcan Çırak's Resume",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf dist/*",
     "build-dev": "webpack --progress --inline --hot",
-    "build-prod": "rm -rf dist/* && webpack -p --progress && cp src/index.html dist/",
-	"build-pdf": "wkhtmltopdf --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:3444 dist/assets/berkin.berkcan.cirak-resume.pdf",
-    "build": "npm run build-prod && npm run server && npm run build-pdf",
+    "build-prod": "npm run clean && webpack -p --progress",
+    "build-pdf": "wait-on http://localhost:3444/ && wkhtmltopdf --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:3444 dist/assets/berkin.berkcan.cirak-resume.pdf",
+    "build": "npm-run-all -s build-prod -p server build-pdf",
     "watch": "webpack-dev-server --progress --inline --hot",
     "server": "cd dist && node server",
     "start": "npm run build-dev && npm run server"
@@ -44,10 +45,12 @@
     "ignore-loader": "^0.1.2",
     "image-webpack-loader": "^3.2.0",
     "node-sass": "^3.13.1",
+    "npm-run-all": "^4.0.2",
     "path": "^0.12.7",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "svg-react-loader": "^0.3.7",
+    "wait-on": "^2.0.2",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-node-externals": "^1.5.4"

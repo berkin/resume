@@ -10,7 +10,7 @@ import GithubIcon from '../assets/img/social/github-square.svg';
 const App = () => (
 	<div className="main-container pure-g">
 		<div className="pure-u-1 main-content">
-			<ul class="horizontal-list">
+			<ul className="horizontal-list">
 				<li>
 					<a href="assets/berkin.berkcan.cirak-resume.pdf">Download as pdf</a>
 				</li>
