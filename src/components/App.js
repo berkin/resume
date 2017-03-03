@@ -14,7 +14,7 @@ const App = () => (
 		<div className="pure-u-1 main-content">
 			<ul className="horizontal-list download-links">
 				<li>
-					<a href="assets/berkin.berkcan.cirak-resume.pdf">
+					<a href="resume.pdf">
 						<span className="isvg">
 							<PdfIcon />
 						</span>
@@ -22,7 +22,7 @@ const App = () => (
 					</a>
 				</li>
 				<li>
-					<a href="assets/berkin.berkcan.cirak-resume.pdf">
+					<a href="javascript:window.print();">
 						<span className="isvg">
 							<PrintIcon />
 						</span>
