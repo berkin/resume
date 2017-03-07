@@ -9,10 +9,10 @@
   "scripts": {
     "clean": "rm -rf dist/*",
 	"copy": "cp src/index.html dist/",
-	"build-client": "npm-run-all -p build copy",
-    "build-prod": "npm run clean && webpack -p --progress",
+	"build-client": "npm-run-all -s clean build-prod copy -p server build-pdf",
+    "build-prod": "webpack -p --progress",
     "build-pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
-    "build": "npm-run-all -s build-prod -p server build-pdf",
+    "build": "npm-run-all -s clean build-prod -p server build-pdf",
     "watch": "webpack --watch --inline --hot",
     "server": "wait-on dist/server.js && cd dist && node server",
     "start": "npm-run-all -p clean watch server "
