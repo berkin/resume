@@ -5,7 +5,6 @@
 	"port": 3444
   },
   "description": "Berkin Berkcan Çırak's Resume",
-  "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist/*",
 	"copy": "cp src/index.html dist/ && touch dist/.nojekyll",
@@ -15,7 +14,9 @@
     "build": "npm-run-all -s clean build-prod -p server build-pdf",
     "watch": "webpack --watch --inline --hot",
     "server": "wait-on dist/server.js && cd dist && node server",
-    "start": "npm-run-all -p clean watch server "
+    "start": "npm-run-all -p clean watch server",
+	"now-build": "echo \"build on local\"",
+	"now-start": "cd dist && node server"
   },
   "author": "berkin",
   "license": "MIT",
