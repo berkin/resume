@@ -2,6 +2,8 @@
  - create one page resume
  
 # TODO
+- [ ] now.js does not support custom domains. use openshift
+- [ ] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
 - [x] add hjson
 - [x] add conferences
 - [x] make more mobile friendly
@@ -10,7 +12,7 @@
 - [x] add social media icons
 - [x] serve from github pages
 - [x] arrange file structure
-- [ ] uglify, concat svg, js, css
+- [x] uglify, concat svg, js, css
 - [x] npm run commands fix
 - [x] image loader fix	
 - [ ] load svg as sprite, use inline svg
