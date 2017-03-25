@@ -2,21 +2,21 @@
   "name": "resume",
   "version": "0.1.0",
   "config": {
-	"port": 3444
+    "port": 3444
   },
   "description": "Berkin Berkcan Çırak's Resume",
   "scripts": {
     "clean": "rm -rf dist/*",
-	"copy": "cp src/index.html dist/ && touch dist/.nojekyll",
-	"build-client": "npm-run-all -s clean build-prod -p server build-pdf",
+    "copy": "cp src/index.html dist/ && touch dist/.nojekyll",
+    "build-client": "npm-run-all -s clean build-prod -p server build-pdf",
     "build-prod": "webpack -p --progress",
     "build-pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
-    "build": "npm-run-all -s clean build-prod -p server build-pdf",
+    "start": "npm-run-all -s clean build-prod -p server build-pdf",
     "watch": "webpack --watch --inline --hot",
     "server": "wait-on dist/server.js && cd dist && node server",
-    "start": "npm-run-all -p clean watch server",
-	"now-build": "echo \"build on local\"",
-	"now-start": "cd dist && node server"
+    "start:dev": "npm-run-all -p clean watch server",
+    "now-build": "echo \"build on local\"",
+    "now-start": "cd dist && node server"
   },
   "author": "berkin",
   "license": "MIT",
