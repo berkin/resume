@@ -14,9 +14,7 @@
     "start": "npm-run-all -s clean build-prod -p server build-pdf",
     "watch": "webpack --watch --inline --hot",
     "server": "wait-on dist/server.js && cd dist && node server",
-    "start:dev": "npm-run-all -p clean watch server",
-    "now-build": "echo \"build on local\"",
-    "now-start": "cd dist && node server"
+    "start:dev": "npm-run-all -p clean watch server"
   },
   "author": "berkin",
   "license": "MIT",
