@@ -103,7 +103,7 @@ const App = () => (
 				)
 				}
 			</ul>
-			<h1>Conferences</h1>
+			<h1>Attended Conferences</h1>
 			<ul className="general-list">
 				{
 				data.conferences.map((item, index) =>
