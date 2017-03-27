@@ -1,2 +1,4 @@
-node_modules
+node_modules/
+dist/
+newrelic.js
 *.log
