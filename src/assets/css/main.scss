@@ -222,4 +222,8 @@ ul {
 		page-break-inside: avoid;
 	}
 
+	a[href]:after {
+		content:" (" attr(href) ") ";
+	}
+
 }
