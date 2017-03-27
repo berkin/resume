@@ -3,7 +3,7 @@
  
 # TODO
 - [ ] now.js does not support custom domains. use openshift
-- [ ] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
+- [x] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
 - [ ] add languages section
 - [x] add hjson
 - [x] add conferences
