@@ -2,6 +2,7 @@
  - create one page resume
  
 # TODO
+- [ ] migrate to webpack 2
 - [ ] now.js does not support custom domains. use openshift
 - [x] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
 - [ ] add languages section
