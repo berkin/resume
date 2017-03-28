@@ -7,10 +7,11 @@
   "description": "Berkin Berkcan Çırak's Resume",
   "scripts": {
     "clean": "rm -rf dist/*",
-    "copy": "cp src/index.html dist/ && touch dist/.nojekyll && cp newrelic.js dist/",
+    "copy": "cp src/index.html dist/ && touch dist/.nojekyll",
+    "newrelic": "cp newrelic.js dist/",
     "start": "npm-run-all -s clean build:prod -p server build:pdf",
     "start:dev": "npm-run-all -s clean -p watch start:wds",
-	"start:wds": "webpack-dev-server",
+    "start:wds": "webpack-dev-server",
     "build:client": "npm-run-all -s clean build:prod -p server build:pdf",
     "build:prod": "webpack -p --progress",
     "build:pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
@@ -20,6 +21,7 @@
   "author": "berkin",
   "license": "MIT",
   "dependencies": {
+    "@newrelic/native-metrics": "^2.1.0",
     "express": "^4.14.1",
     "hjson": "^2.4.1",
     "marked": "^0.3.6",
