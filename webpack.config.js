@@ -83,7 +83,9 @@ module.exports = [
 			new webpack.HotModuleReplacementPlugin(),
 			new ExtractTextPlugin('./styles.css', {
 				allChunks: true
-			})
+			}),
+			...productionPluginDefine,
+			new webpack.optimize.UglifyJsPlugin()
 		]),
 		resolve: {
 			extensions: ['', '.js', '.scss', '.css'],
