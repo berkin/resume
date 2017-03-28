@@ -218,11 +218,11 @@ ul {
 		display: none;
 	}
 
-	.general-list li {
+	.general-list .content li {
 		page-break-inside: avoid;
 	}
 
-	a[href]:after {
+	a[href^=http]:after {
 		content:" (" attr(href) ") ";
 	}
 

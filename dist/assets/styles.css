@@ -1656,9 +1656,9 @@ ul {
     border-radius: 0; }
   .download-links {
     display: none; }
-  .general-list li {
+  .general-list .content li {
     page-break-inside: avoid; }
-  a[href]:after {
+  a[href^=http]:after {
     content: " (" attr(href) ") "; } }
 
 /*# sourceMappingURL=styles.css.map*/

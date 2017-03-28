@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c022ba7e8c37b77cf877"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b859133d5e1e9b34d87a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -597,7 +597,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c022ba7e8c37b77cf877"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b859133d5e1e9b34d87a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -25732,10 +25732,9 @@
 
 	var map = {
 		"./berkin-berkcan-cirak.jpg": 228,
-		"./berkin-berkcan.cirak-2.jpg": 229,
 		"./file-pdf-o.svg": 225,
 		"./print.svg": 226,
-		"./social/dribbble.svg": 230,
+		"./social/dribbble.svg": 229,
 		"./social/envelope-square.svg": 222,
 		"./social/github-square.svg": 224,
 		"./social/linkedin-square.svg": 223,
@@ -25763,12 +25762,6 @@
 
 /***/ },
 /* 229 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "img/berkin-berkcan.cirak-2.jpg";
-
-/***/ },
-/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
