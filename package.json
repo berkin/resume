@@ -8,13 +8,14 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "copy": "cp src/index.html dist/ && touch dist/.nojekyll && cp newrelic.js dist/",
-    "build-client": "npm-run-all -s clean build-prod -p server build-pdf",
-    "build-prod": "webpack -p --progress",
-    "build-pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
-    "start": "npm-run-all -s clean build-prod -p server build-pdf",
+    "start": "npm-run-all -s clean build:prod -p server build:pdf",
+    "start:dev": "npm-run-all -s clean -p watch start:wds",
+	"start:wds": "webpack-dev-server",
+    "build:client": "npm-run-all -s clean build:prod -p server build:pdf",
+    "build:prod": "webpack -p --progress",
+    "build:pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
     "watch": "webpack --watch --inline --hot",
-    "server": "wait-on dist/server.js && cd dist && node server",
-    "start:dev": "npm-run-all -p clean watch server"
+    "server": "wait-on dist/server.js && cd dist && node server"
   },
   "author": "berkin",
   "license": "MIT",
