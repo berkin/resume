@@ -16,7 +16,7 @@
     "build:prod": "webpack -p --progress",
     "build:pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
     "watch": "webpack --watch --inline --hot",
-    "server": "wait-on dist/server.js && heroku local"
+    "server": "wait-on dist/server.js && node dist/server"
   },
   "author": "berkin",
   "license": "MIT",
