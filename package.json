@@ -16,7 +16,7 @@
     "build:prod": "webpack -p --progress",
     "build:pdf": "wait-on http://localhost:$npm_package_config_port/ && wkhtmltopdf  --print-media-type  --dpi 300 -L 0 -R 0 -T 0 -B 0  http://localhost:$npm_package_config_port dist/resume.pdf",
     "watch": "webpack --watch --inline --hot",
-    "server": "wait-on dist/server.js && cd dist && node server"
+    "server": "wait-on dist/server.js && heroku local"
   },
   "author": "berkin",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "concurrently": "^3.3.0",
+    "coveralls": "^2.13.0",
     "css-loader": "^0.26.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
