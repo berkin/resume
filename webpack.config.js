@@ -2,12 +2,13 @@ const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
-
 const nodeExternals = require('webpack-node-externals');
 
 const isProduction = process.env.NODE_ENV === 'production';
+const port = process.env.PORT || 8000;
+
 const productionPluginDefine = isProduction ? [
-	new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } })
+	new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production'), PORT: port } })
 ] : [];
 
 const clientLoaders = isProduction ? productionPluginDefine.concat([
@@ -140,6 +141,5 @@ module.exports = [
 				}
 			]
 		}
-	},
-
+	}
 ];

@@ -21,6 +21,6 @@ RUN apt-get install nasm
 RUN npm i url-loader image-webpack-loader --save-dev
 
 
-EXPOSE 3444
+EXPOSE 8000
 
 CMD [ "npm", "start"]
