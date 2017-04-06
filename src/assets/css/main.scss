@@ -218,8 +218,16 @@ ul {
 		display: none;
 	}
 
+	h1,
+	h2,
+	h3,
+	.label {
+		page-break-after: avoid !important;
+		page-break-inside: avoid !important;
+	}
+
 	.general-list .content li {
-		page-break-inside: avoid;
+		page-break-inside: avoid !important;
 	}
 
 	a[href^=http]:after {

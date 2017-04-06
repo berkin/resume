@@ -10,8 +10,8 @@ export default ({ body, title }) => {
 	 </head>
 	<body>
 		<div id="app">${body}</div>
+		<script src="assets/bundle.js"></script>
 	</body>
-	<script src="assets/bundle.js"></script>
 </html>
   `;
 };
