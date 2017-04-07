@@ -136,6 +136,10 @@
 				- Focused on e-commerce, designed online book store.
 				'''
 		}],
+		languages: [
+			Turkish
+			English
+		],
 		conferences: [{
 			title: Fluent
 			date: 2014

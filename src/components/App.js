@@ -107,6 +107,10 @@ const App = () => (
 				)
 				}
 			</ul>
+			<h1>Languages</h1>
+			<div className="description">
+				{ data.languages.join(', ') }
+			</div>
 			<h1>Attended Conferences</h1>
 			<ul className="general-list">
 				{

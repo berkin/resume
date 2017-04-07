@@ -41,12 +41,10 @@ body {
 	border-radius: 100%;
 	float: right;
 
-	display: flex;
-    justify-content: center;
     overflow: hidden;
 
-	height: 150px;
-	width: 150px;
+	height: 140px;
+	width: 140px;
 	margin: 0 0 25px 25px;
 }
 
@@ -55,6 +53,10 @@ h1 {
 	font-size: 24px;
 	font-weight: normal;
 	line-height: 1.5em;
+}
+
+.description {
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -127,7 +129,7 @@ ul {
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 120px;
+				width: 90px;
 			}
 
 			.company,
@@ -184,8 +186,8 @@ ul {
 		> li {
 			.label {
 				.dates {
-					left: auto;
-					right: 0;
+					position: static;
+					float: right;
 				}
 				text-align: right;
 				width: auto;
