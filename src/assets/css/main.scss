@@ -1,4 +1,3 @@
-@import '~purecss/build/pure.css';
 
 *,
 :before,
@@ -12,12 +11,8 @@ body {
 	background: #f4f4f4;
 	color: #333;
 	font-size: 13px;
-	line-height: 1.4em;
-}
-
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
 }
 
 .main-container {
@@ -111,7 +106,8 @@ ul {
 		border-bottom: 1px solid #e3e3e3;
 		margin: 0 0 20px;
 		padding-bottom: 20px;
-		overflow: hidden;
+		position: relative;
+
 		&:last-child {
 			border: 0;
 		}
@@ -121,21 +117,37 @@ ul {
 		}
 		.label {
 			font-weight: bold;
-			float: left;
-			width: 120px;
+			position: relative;
+
+			+ div {
+				margin-top: 20px;
+			}
+
+			.dates {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 120px;
+			}
+
+			.company,
+			.title {
+				margin-left: 130px;
+			}
 		}
 		.title {
 			margin: 0;
 		}
 
-		.content {
-			margin-left: 130px;
+		.content-text {
+			margin: 5px 0 0;
+			font-size: 13px;
+			font-weight: normal;
 		}
 
-		.title {
-			+ div {
-				margin-top: 20px;
-			}
+		.content,
+		.content-text {
+			margin-left: 130px;
 		}
 	}
 }
@@ -171,13 +183,21 @@ ul {
 	.general-list {
 		> li {
 			.label {
-				float: right;
+				.dates {
+					left: auto;
+					right: 0;
+				}
 				text-align: right;
 				width: auto;
 			}
 
-			.content {
-				margin-left: 0;
+			.content,
+			.company,
+			.title,
+			.content-text {
+				display: block;
+				text-align: left;
+				margin-left: 0 !important;
 			}
 		}
 	}
@@ -218,9 +238,6 @@ ul {
 		display: none;
 	}
 
-	h1,
-	h2,
-	h3,
 	.label {
 		page-break-after: avoid !important;
 		page-break-inside: avoid !important;

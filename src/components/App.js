@@ -10,8 +10,8 @@ import PdfIcon from '../assets/img/file-pdf-o.svg';
 import PrintIcon from '../assets/img/print.svg';
 
 const App = () => (
-	<div className="main-container pure-g">
-		<div className="pure-u-1 main-content">
+	<div className="main-container">
+		<div className="main-content">
 			<ul className="horizontal-list download-links">
 				<li>
 					<a href="resume.pdf">
@@ -75,10 +75,12 @@ const App = () => (
 				{
 				data.education.map((item, index) =>
 					<li key={index}>
-						<div className="label"><span className="date">{item.end}</span></div>
-						<div className="content">
+						<div className="label">
+							<div className="dates">
+								<span className="date">{item.end}</span>
+							</div>
 							<h2 className="title">{item.school}</h2>
-							{item.faculty}
+							<h3 className="content-text">{item.faculty}</h3>
 						</div>
 					</li>
 				)
@@ -91,12 +93,14 @@ const App = () => (
 				data.experiences.map((item, index) =>
 					<li key={index}>
 						<div className="label">
-							<span className="date">{item.begin}</span>
-							<span className="date">{item.end}</span>
-						</div>
-						<div className="content">
+							<div className="dates">
+								<span className="date">{item.begin}</span>
+								<span className="date">{item.end}</span>
+							</div>
 							<h2 className="company">{item.company}</h2>
 							<h3 className="title">{item.title}</h3>
+						</div>
+						<div className="content">
 							<div dangerouslySetInnerHTML={{ __html: marked(item.description) }} />
 						</div>
 					</li>
@@ -108,8 +112,10 @@ const App = () => (
 				{
 				data.conferences.map((item, index) =>
 					<li key={index}>
-						<div className="label"><span className="date">{item.date}</span></div>
-						<div className="content">
+						<div className="label">
+							<div className="dates">
+								<span className="date">{item.date}</span>
+							</div>
 							<h2 className="company">{item.title}</h2>
 							<h3 className="title">{item.location}</h3>
 						</div>
