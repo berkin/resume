@@ -11,7 +11,7 @@
     "start:wds": "webpack-dev-server",
     "build:client": "npm-run-all -s clean build:prod -p server build:pdf",
     "build:prod": "NODE_ENV=production webpack --progress",
-    "build:pdf": "wait-on http://0.0.0.0:${PORT:=8000}/ && wkhtmltopdf --disable-smart-shrinking  --print-media-type --dpi 300 -L 0 -R 0 -T 0 -B 0  http://0.0.0.0:${PORT:=8000} dist/resume.pdf",
+    "build:pdf": "wait-on http://0.0.0.0:${PORT:=8000}/ && wkhtmltopdf --disable-smart-shrinking  --print-media-type --dpi 300 -L 0 -R 0 -T 0.2cm -B 0.2cm http://0.0.0.0:${PORT:=8000} dist/resume.pdf",
     "watch": "webpack --watch --inline --hot",
     "server": "wait-on dist/server.js && node dist/server"
   },
