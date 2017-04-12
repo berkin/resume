@@ -3,9 +3,9 @@
  
 # TODO
 - [ ] migrate to webpack 2
-- [ ] now.js does not support custom domains. use openshift
+- [x] ~~Now.js does not support custom domains. use openshift~~ use heroku
 - [x] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
-- [ ] add languages section
+- [x] add languages section
 - [x] add hjson
 - [x] add conferences
 - [x] make more mobile friendly
@@ -21,12 +21,4 @@
 
 # configuation
 - make common config to extend client and server.js
-
-## client
-- use babel-polyfill to write in es6
-```javascript
-module.exports = {
-  entry: ["babel-polyfill", "./app/js"]
-};
-```
 
