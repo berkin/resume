@@ -11,11 +11,11 @@ const productionPluginDefine = isProduction ? [
 	new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production'), PORT: port } })
 ] : [];
 
-const clientLoaders = isProduction ? productionPluginDefine.concat([
-	new webpack.optimize.DedupePlugin(),
-	new webpack.optimize.OccurrenceOrderPlugin(),
-	new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false }, sourceMap: false })
-]) : [];
+const clientLoaders = isProduction ? productionPluginDefine.concat([new webpack.optimize.UglifyJsPlugin({
+	compress: { warnings: false },
+	sourceMap: false,
+	sourceMap: true
+})]) : [];
 
 module.exports = [
 	{
@@ -33,61 +33,85 @@ module.exports = [
 			hot: true
 		},
 		module: {
-			loaders: [
+			rules: [
 				{
 					test: /\.hjson$/,
-					loader: 'hjson-loader'
+					use: 'hjson-loader'
 				},
 				{
 					test: /\.js$/,
 					exclude: /node_modules/,
-					loaders: ['babel?presets[]=es2015,presets[]=react']
+					use: 'babel-loader?presets[]=es2015,presets[]=react'
 				},
 				{
 					test: /\.scss$/,
-					loader: ExtractTextPlugin.extract('css!sass')
-				},
-				{
-					test: /.*\.(gif|png|jpe?g)$/i,
-					loaders: [
-						'file?hash=sha512&digest=hex&name=img/[name].[ext]',
-						'image-webpack'
-					]
+					use: ExtractTextPlugin.extract({
+						fallback: 'style-loader',
+						loader: [
+							{
+								loader: 'css-loader',
+								options: {
+									sourceMap: true,
+									minimize: true,
+									discardComments: {
+										removeAll: true
+									}
+								}
+							},
+							{
+								loader: 'sass-loader',
+								options: {
+									sourceMap: true
+								}
+							}
+						]
+					})
 				},
 				{
 					test: /\.svg$/,
-					loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
+					use: [{
+						'loader': 'babel-loader?presets[]=es2015,presets[]=react'
+					}, {
+						'loader': 'svg-react-loader'
+					}]
+				},
+				{
+					test: /\.(gif|png|jpe?g)$/i,
+					use: [
+						'file-loader?name=assets/img/[name].[ext]',
+						{
+							loader: 'image-webpack-loader?bypassOnDebug',
+							query: {
+								mozjpeg: {
+									progressive: true,
+								},
+								gifsicle: {
+									interlaced: false,
+								},
+								optipng: {
+									optimizationLevel: 4,
+								},
+								pngquant: {
+									quality: '75-90',
+									speed: 3,
+								},
+							}
+						}
+					]
 				}
 			]
 		},
-		imageWebpackLoader: {
-			mozjpeg: {
-				quality: 65
-			},
-			pngquant: {
-				quality: '65-90',
-				speed: 4
-			},
-			svgo: {
-				plugins: [
-					{
-						removeViewBox: false
-					},
-					{
-						removeEmptyAttrs: false
-					}
-				]
-			}
-		},
+
 
 		plugins: clientLoaders.concat([
 			new webpack.HotModuleReplacementPlugin(),
-			new ExtractTextPlugin('./styles.css', {
+			new ExtractTextPlugin({
+				filename: './styles.css',
 				allChunks: true
 			})
 		]),
 		resolve: {
-			extensions: ['', '.js', '.scss', '.css'],
+			extensions: ['.js', '.scss', '.css'],
 			alias: {
 				pure: path.join(__dirname, './node_modules/purecss/build/pure.css')
 			}
@@ -114,30 +138,34 @@ module.exports = [
 		externals: nodeExternals(),
 		plugins: productionPluginDefine,
 		module: {
-			loaders: [
+			rules: [
 				{
 					test: /\.hjson$/,
-					loader: 'hjson-loader'
+					use: 'hjson-loader'
 				},
 				{
 					test: /\.js$/,
 					exclude: /node_modules/,
-					loaders: ['babel?presets[]=es2015,presets[]=react']
+					use: 'babel-loader?presets[]=es2015,presets[]=react'
 				},
 				{
 					test: /\.scss$/,
-					loader: 'ignore-loader'
+					use: 'ignore-loader'
 				},
 				{
 					test: /.*\.(gif|png|jpe?g)$/i,
-					loaders: [
-						'file?hash=sha512&digest=hex&name=assets/img/[name].[ext]',
-						'image-webpack'
+					use: [
+						'file-loader?name=assets/img/[name].[ext]',
+						'image-webpack-loader?bypassOnDebug'
 					]
 				},
 				{
 					test: /\.svg$/,
-					loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
+					use: [{
+						'loader': 'babel-loader?presets[]=es2015,presets[]=react'
+					}, {
+						'loader': 'svg-react-loader'
+					}]
 				}
 			]
 		}
