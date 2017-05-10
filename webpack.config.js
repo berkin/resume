@@ -13,7 +13,6 @@ const productionPluginDefine = isProduction ? [
 
 const clientLoaders = isProduction ? productionPluginDefine.concat([new webpack.optimize.UglifyJsPlugin({
 	compress: { warnings: false },
-	sourceMap: false,
 	sourceMap: true
 })]) : [];
 
@@ -70,9 +69,9 @@ module.exports = [
 				{
 					test: /\.svg$/,
 					use: [{
-						'loader': 'babel-loader?presets[]=es2015,presets[]=react'
+						loader: 'babel-loader?presets[]=es2015,presets[]=react'
 					}, {
-						'loader': 'svg-react-loader'
+						loader: 'svg-react-loader'
 					}]
 				},
 				{
@@ -83,18 +82,18 @@ module.exports = [
 							loader: 'image-webpack-loader?bypassOnDebug',
 							query: {
 								mozjpeg: {
-									progressive: true,
+									progressive: true
 								},
 								gifsicle: {
-									interlaced: false,
+									interlaced: false
 								},
 								optipng: {
-									optimizationLevel: 4,
+									optimizationLevel: 4
 								},
 								pngquant: {
 									quality: '75-90',
-									speed: 3,
-								},
+									speed: 3
+								}
 							}
 						}
 					]
@@ -162,9 +161,9 @@ module.exports = [
 				{
 					test: /\.svg$/,
 					use: [{
-						'loader': 'babel-loader?presets[]=es2015,presets[]=react'
+						loader: 'babel-loader?presets[]=es2015,presets[]=react'
 					}, {
-						'loader': 'svg-react-loader'
+						loader: 'svg-react-loader'
 					}]
 				}
 			]
