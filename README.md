@@ -1,11 +1,11 @@
-[![Build Status](https://img.shields.io/travis/berkin/resume.svg?style=flat)](https://travis-ci.org/GITHUB-USERNAME/GITHUB-REPO)
+[![Build Status](https://img.shields.io/travis/berkin/resume.svg?style=flat)](https://travis-ci.org/berkin/resume)
 
 # Resume
  - create one page resume
  
 # TODO
 - [ ] is nasm needed really?
-- [ ] migrate to webpack 2
+- [x] migrate to webpack 2
 - [x] ~~Now.js does not support custom domains. use openshift~~ use heroku
 - [x] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
 - [x] add languages section
