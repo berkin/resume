@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/berkin/resume.svg?style=flat-square)](https://travis-ci.org/GITHUB-USERNAME/GITHUB-REPO)
+[![Build Status](https://img.shields.io/travis/berkin/resume.svg?style=flat)](https://travis-ci.org/GITHUB-USERNAME/GITHUB-REPO)
 
 # Resume
  - create one page resume
