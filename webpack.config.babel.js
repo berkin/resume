@@ -1,8 +1,8 @@
-const autoprefixer = require('autoprefixer');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const path = require('path');
-const webpack = require('webpack');
-const nodeExternals = require('webpack-node-externals');
+import autoprefixer from 'autoprefixer';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import path from 'path';
+import webpack from 'webpack';
+import nodeExternals from 'webpack-node-externals';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const port = process.env.PORT || 8000;
@@ -16,7 +16,7 @@ const clientLoaders = isProduction ? productionPluginDefine.concat([new webpack.
 	sourceMap: true
 })]) : [];
 
-module.exports = [
+export default [
 	{
 		name: 'client',
 		entry: './src/assets/client.js',
