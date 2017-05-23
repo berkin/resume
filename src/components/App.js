@@ -8,9 +8,11 @@ import LinkedinIcon from '../assets/img/social/linkedin-square.svg';
 import GithubIcon from '../assets/img/social/github-square.svg';
 import PdfIcon from '../assets/img/file-pdf-o.svg';
 import PrintIcon from '../assets/img/print.svg';
+import Contact from './Contact';
 
 const App = () => (
 	<div className="main-container">
+		<Contact />
 		<div className="main-content">
 			<ul className="horizontal-list download-links">
 				<li>
