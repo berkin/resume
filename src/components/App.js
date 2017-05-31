@@ -9,9 +9,11 @@ import GithubIcon from '../assets/img/social/github-square.svg';
 import PdfIcon from '../assets/img/file-pdf-o.svg';
 import PrintIcon from '../assets/img/print.svg';
 import Contact from './Contact';
+import Ribbon from './Ribbon';
 
 const App = () => (
 	<div className="main-container">
+		<Ribbon sourceUrl={data.sourceUrl} />
 		<Contact />
 		<div className="main-content">
 			<ul className="horizontal-list download-links">
