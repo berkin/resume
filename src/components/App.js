@@ -14,7 +14,6 @@ import Ribbon from './Ribbon';
 const App = () => (
 	<div className="main-container">
 		<Ribbon sourceUrl={data.sourceUrl} />
-		<Contact />
 		<div className="main-content">
 			<ul className="horizontal-list download-links">
 				<li>
