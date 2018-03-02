@@ -9,6 +9,7 @@ import GithubIcon from '../assets/img/social/github-square.svg'
 import PdfIcon from '../assets/img/file-pdf-o.svg'
 import PrintIcon from '../assets/img/print.svg'
 import LocationIcon from '../assets/img/location.svg'
+import PaperPlaneIcon from '../assets/img/paper-plane.svg'
 import Contact from './Contact'
 import Ribbon from './Ribbon'
 
