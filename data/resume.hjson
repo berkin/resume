@@ -31,6 +31,7 @@
 			end: present
 			company: ICEYE
 			title: Senior Front-End Developer
+			location: Helsinki, Finland
 			description:
 				'''
 				- ICEYE has pushed the envelope in several key technologies to deliver optimized performance, changing the economics to deliver a SAR sensor that opens up new possibilties.
@@ -39,9 +40,10 @@
 		},
 		{
 			begin: March 2016
-			end: Present
+			end: September 2017
 			company: Come On!
 			title: Senior Front-End Developer
+			location: Istanbul, Turkey
 			description:
 				'''
 				- ComeOn is a Swedish online gaming, betting and casino portal.
@@ -54,6 +56,7 @@
 			end: March 2016
 			company: Garanti Technology
 			title: Senior Front-End Developer
+			location: Istanbul, Turkey
 			description:
 				'''
 				- Responsible for the front-end architecture of a large scale single-page CRM application.
@@ -68,6 +71,7 @@
 			begin: April 2011
 			end: July 2013
 			company: Nexum Boğaziçi
+			location: Istanbul, Turkey
 			title: Senior Front-End Developer
 			description:
 				'''
@@ -84,6 +88,7 @@
 			begin: April 2010
 			end: April 2011
 			company: Haberturk
+			location: Istanbul, Turkey
 			title: Full Stack Developer
 			description:
 				'''
@@ -119,6 +124,7 @@
 			end: 2010
 			company: Siyah Balık
 			title: Full Stack Developer
+			location: Ankara, Turkey
 			description:
 				'''
 				- Focused on e-commerce. Built couple of e-commerce websites using open source e-commerce platforms including osCommerce, Zen-cart, Magento.
@@ -133,6 +139,7 @@
 			end: 2007
 			company: Mor-Tel
 			title: Full Stack Developer
+			location: Ankara, Turkey
 			description:
 				'''
 				- Built applications like instant messaging, sms services by using Telsim's sms gateway.
@@ -144,6 +151,7 @@
 			end: 2005
 			company: Erasmus Information Technology
 			title: Web Designer
+			location: Ankara, Turkey
 			description:
 				'''
 				- Focused on e-commerce, designed online book store.
@@ -169,6 +177,10 @@
 			title: Node Interactive
 			date: 2016
 			location: Amsterdam
+		},{
+			title: Awesome Day
+			date: 2018
+			location: Helsinki
 		}]
 }
 

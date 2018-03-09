@@ -32,6 +32,7 @@ className	/Users/berkincirak/dev/resume/src/components/App.js	/^							<span cla
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^							<span className="text">Linked In<\/span>$/;"	s	language:JavaScript
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^							<span className="text">{data.email}<\/span>$/;"	s	language:JavaScript
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^							<span className="text">{data.phone}<\/span>$/;"	s	language:JavaScript
+className	/Users/berkincirak/dev/resume/src/components/App.js	/^							{item.location && <h4 className="title">{item.location}<\/h4>}$/;"	s	language:JavaScript
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^						<div className="content">$/;"	s	language:JavaScript
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^						<div className="label">$/;"	s	language:JavaScript
 className	/Users/berkincirak/dev/resume/src/components/App.js	/^						<div className="label">$/;"	s	language:JavaScript

@@ -114,6 +114,7 @@ const App = () => (
 							</div>
 							<h2 className="company">{item.company}</h2>
 							<h3 className="title">{item.title}</h3>
+							{item.location && <h4 className="title">{item.location}</h4>}
 						</div>
 						<div className="content">
 							<div

@@ -25,3 +25,9 @@
         animation: octocat-wave 560ms ease-in-out
     }
 }
+
+@media print {
+	.github-corner {
+		display: none;
+	}
+}
