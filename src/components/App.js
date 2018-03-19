@@ -12,6 +12,9 @@ import LocationIcon from '../assets/img/location.svg'
 import PaperPlaneIcon from '../assets/img/paper-plane.svg'
 import Contact from './Contact'
 import Ribbon from './Ribbon'
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-262439-14')
 
 const App = () => (
 	<div className="main-container">
