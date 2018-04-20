@@ -3,10 +3,11 @@
 # Resume
  - create one page resume
  
+ test
 # TODO
 - [ ] is nasm needed really?
 - [x] migrate to webpack 2
-- [x] ~~Now.js does not support custom domains. use openshift~~ use heroku
+- [x] ~~Now.js *does* not support custom domains. use openshift~~ use heroku
 - [x] use wkhtml node package to create pdf. build on server. osx has problems, does not create pagebreaks.
 - [x] add languages section
 - [x] add hjson
