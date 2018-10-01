@@ -2,8 +2,16 @@
 
 # Resume
  - create one page resume
+'''sh
+./bin/build.sh
+./bin/run.sh
+
+heroku login
+heroku container:login
+./bin/push.sh
+./bin/deploy.sh
+'''
  
- test
 # TODO
 - [ ] is nasm needed really?
 - [x] migrate to webpack 2

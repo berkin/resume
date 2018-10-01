@@ -4,6 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-className	/Users/berkincirak/dev/resume/src/components/App.js	/^					className="summary"$/;"	P	language:JavaScript
-dangerouslySetInnerHTML	/Users/berkincirak/dev/resume/src/components/App.js	/^								dangerouslySetInnerHTML={{ __html: marked(item.description) }}$/;"	P	language:JavaScript
-dangerouslySetInnerHTML	/Users/berkincirak/dev/resume/src/components/App.js	/^					dangerouslySetInnerHTML={{ __html: marked(data.summary) }}$/;"	P	language:JavaScript
