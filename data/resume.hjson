@@ -2,7 +2,7 @@
 	name: Berkin Berkcan Çırak
 	title: Front-End Developer
 	avatar: berkin-berkcan-cirak.jpg
-	phone: +358 44 952 7789
+	phone: +358 40 509 0998
 	location: Helsinki, Finland
 	email: berkin@kuyabiye.com
 	sourceUrl: https://github.com/berkin/resume
@@ -26,9 +26,20 @@
 		}
 	],
 	experiences: [
-		{
+	{
 			begin: September 2017
 			end: present
+			company: Digital Goodie
+			title: Senior Front-End Developer
+			location: Helsinki, Finland
+			description:
+				'''
+				'''
+		},
+
+		{
+			begin: September 2017
+			end: September 2018
 			company: ICEYE
 			title: Senior Front-End Developer
 			location: Helsinki, Finland
