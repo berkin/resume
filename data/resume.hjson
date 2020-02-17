@@ -26,9 +26,22 @@
 		}
 	],
 	experiences: [
+
+	{
+			begin: February 2020
+			end: present
+			company: Virta
+			title: Senior Front-End Developer
+			location: Helsinki, Finland
+			description:
+				'''
+				React
+				'''
+		},
+
 	{
 			begin: September 2018
-			end: present
+			end: February 2020
 			company: Digital Goodie
 			title: Senior Front-End Developer
 			location: Helsinki, Finland
