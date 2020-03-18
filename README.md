@@ -3,7 +3,7 @@
 # Resume
  - create one page resume
 
-'' sh
+```sh
 ./bin/build.sh
 ./bin/run.sh
 
@@ -11,7 +11,7 @@ heroku login
 heroku container:login
 ./bin/push.sh
 ./bin/deploy.sh
-''
+```
  
 # TODO
 - [ ] is nasm needed really?
