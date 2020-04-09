@@ -5,7 +5,7 @@ import webpack from 'webpack';
 import nodeExternals from 'webpack-node-externals';
 
 const isProduction = process.env.NODE_ENV === 'production';
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3020;
 
 const productionPluginDefine = isProduction ? [
 	new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production'), PORT: port } })
